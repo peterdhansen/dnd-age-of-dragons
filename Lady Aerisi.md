@@ -1,0 +1,7 @@
+- Leader of the Air Genasi
+- Searching for Mantle
+	- Mantle can control a dragon?
+	- Agrees for us to take the mantle as long as we keep it hidden. 
+	- 
+- Goal is to take flying city
+- 

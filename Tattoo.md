@@ -1,0 +1,3 @@
+- Draw on life force (not mana)
+- Need magic ink
+- 

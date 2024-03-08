@@ -1,0 +1,15 @@
+{
+	"nodes":[
+		{"type":"group","id":"ec2227c67b58b349","x":-600,"y":-1951,"width":2020,"height":2071,"color":"4","label":"Character"},
+		{"type":"file","file":"DND/Titus/Character.md","subpath":"#Items","id":"24c61e60ac11dbb8","x":-560,"y":-1440,"width":560,"height":1100},
+		{"type":"file","file":"DND/Titus/Character.md","id":"b78d102fc994d0d2","x":-560,"y":-1908,"width":560,"height":408},
+		{"type":"file","file":"DND/Titus/Attributes.md","subpath":"#Attributes","id":"7e3b08ee01886342","x":20,"y":-1908,"width":340,"height":1112},
+		{"type":"file","file":"DND/Chapter 6.md","id":"881256a46af84c9a","x":1440,"y":-1951,"width":622,"height":1471},
+		{"type":"file","file":"DND/Titus/Resources.md","id":"39b24056541eb0e4","x":820,"y":-1908,"width":580,"height":993},
+		{"type":"file","file":"DND/Moments.md","id":"edfda07f8dad02c3","x":2100,"y":-1951,"width":580,"height":1036},
+		{"type":"file","file":"DND/Titus/Attributes.md","subpath":"#Stats","id":"f67cb485e4c15126","x":380,"y":-1908,"width":420,"height":1112},
+		{"type":"file","file":"DND/Titus/Paladin Spells.md","subpath":"#Prepared","id":"64557f88483ff7ea","x":20,"y":-760,"width":780,"height":640},
+		{"id":"31bb81a59d288ef6","x":2100,"y":-880,"width":620,"height":800,"type":"file","file":"DND/Tasks.md"}
+	],
+	"edges":[]
+}

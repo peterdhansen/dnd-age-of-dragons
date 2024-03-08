@@ -1,0 +1,1 @@
+There is a huge army of kobolds and dragon-like people invading near Greenist, south of Elturel. I must urgently talk with someone about the safety of the high forest.
