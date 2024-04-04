@@ -1,0 +1,264 @@
+{
+  "main": {
+    "id": "bdcdf9cf4be9e2e4",
+    "type": "split",
+    "children": [
+      {
+        "id": "a055951694f71807",
+        "type": "leaf",
+        "pane-relief:history-v1": {
+          "pos": 0,
+          "stack": [
+            {
+              "leaf": "a055951694f71807",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"DND/Character.md\",\"mode\":\"preview\",\"backlinks\":true,\"source\":true}}",
+              "eState": "{}"
+            },
+            {
+              "leaf": "a055951694f71807",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"DND/Chapter 4.md\",\"mode\":\"source\",\"backlinks\":true,\"source\":true}}",
+              "eState": "{\"cursor\":{\"from\":{\"line\":0,\"ch\":0},\"to\":{\"line\":0,\"ch\":0}},\"scroll\":0}"
+            },
+            {
+              "leaf": "a055951694f71807",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"DND/Character.md\",\"mode\":\"source\",\"backlinks\":true,\"source\":true}}",
+              "eState": "{\"cursor\":{\"from\":{\"line\":117,\"ch\":0},\"to\":{\"line\":117,\"ch\":0}},\"scroll\":99.10625}"
+            },
+            {
+              "leaf": "a055951694f71807",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"DND/Chapter 4.md\",\"mode\":\"preview\",\"backlinks\":true,\"source\":true}}",
+              "eState": "{\"scroll\":35.67897727272727}"
+            },
+            {
+              "leaf": "a055951694f71807",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"DND/Character.md\",\"mode\":\"preview\",\"backlinks\":true,\"source\":true}}",
+              "eState": "{}"
+            },
+            {
+              "leaf": "a055951694f71807",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"DND/Paladin Spells.md\",\"mode\":\"source\",\"backlinks\":true,\"source\":true}}",
+              "eState": "{\"cursor\":{\"from\":{\"line\":0,\"ch\":0},\"to\":{\"line\":0,\"ch\":0}}}"
+            },
+            {
+              "leaf": "a055951694f71807",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"DND/Character.md\",\"mode\":\"source\",\"backlinks\":true,\"source\":true}}",
+              "eState": "{\"cursor\":{\"from\":{\"line\":2,\"ch\":6},\"to\":{\"line\":2,\"ch\":6}},\"scroll\":0}"
+            },
+            {
+              "leaf": "a055951694f71807",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"DND/Siraya.md\",\"mode\":\"preview\",\"backlinks\":true,\"source\":true}}",
+              "eState": "{\"scroll\":0.7692307692307693}"
+            },
+            {
+              "leaf": "a055951694f71807",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"DND/Chapter 4.md\",\"mode\":\"preview\",\"backlinks\":true,\"source\":true}}",
+              "eState": "{\"scroll\":0.010256410409242678}"
+            },
+            {
+              "leaf": "a055951694f71807",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"DND/Character.md\",\"mode\":\"preview\",\"backlinks\":true,\"source\":true}}",
+              "eState": "{\"scroll\":48.30588158535909}"
+            },
+            {
+              "leaf": "a055951694f71807",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"DND/Siraya.md\",\"mode\":\"source\",\"backlinks\":true,\"source\":true}}",
+              "eState": "{\"cursor\":{\"from\":{\"line\":0,\"ch\":0},\"to\":{\"line\":0,\"ch\":0}}}"
+            },
+            {
+              "leaf": "a055951694f71807",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"DND/Paladin Spells.md\",\"mode\":\"source\",\"backlinks\":true,\"source\":true}}",
+              "eState": "{\"cursor\":{\"from\":{\"line\":0,\"ch\":0},\"to\":{\"line\":0,\"ch\":0}},\"scroll\":0}"
+            },
+            {
+              "leaf": "a055951694f71807",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"DND/Character.md\",\"mode\":\"source\",\"backlinks\":true,\"source\":true}}",
+              "eState": "{\"cursor\":{\"from\":{\"line\":88,\"ch\":16},\"to\":{\"line\":88,\"ch\":16}},\"scroll\":77.06445694901227}"
+            },
+            {
+              "leaf": "a055951694f71807",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"DND/Chapter 4.md\",\"mode\":\"source\",\"backlinks\":true,\"source\":true}}",
+              "eState": "{\"cursor\":{\"from\":{\"line\":46,\"ch\":3},\"to\":{\"line\":46,\"ch\":3}},\"scroll\":25.05364489555359}"
+            },
+            {
+              "leaf": "a055951694f71807",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"DND/Character.md\",\"mode\":\"source\",\"backlinks\":true,\"source\":true}}",
+              "eState": "{\"cursor\":{\"from\":{\"line\":143,\"ch\":9},\"to\":{\"line\":143,\"ch\":9}},\"scroll\":0}"
+            },
+            {
+              "leaf": "a055951694f71807",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"DND/Siraya.md\",\"mode\":\"preview\",\"backlinks\":true,\"source\":true}}",
+              "eState": "{}"
+            },
+            {
+              "leaf": "a055951694f71807",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"DND/Character.md\",\"mode\":\"preview\",\"backlinks\":true,\"source\":true}}",
+              "eState": "{\"scroll\":0}"
+            },
+            {
+              "leaf": "a055951694f71807",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"DND/Siraya.md\",\"mode\":\"source\",\"backlinks\":true,\"source\":true}}",
+              "eState": "{\"cursor\":{\"from\":{\"line\":0,\"ch\":0},\"to\":{\"line\":0,\"ch\":0}},\"scroll\":0}"
+            },
+            {
+              "leaf": "a055951694f71807",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"DND/Chapter 4.md\",\"mode\":\"source\",\"backlinks\":true,\"source\":true}}",
+              "eState": "{\"scroll\":26.833332379659016}"
+            },
+            {
+              "leaf": "a055951694f71807",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"DND/Siraya.md\",\"mode\":\"preview\",\"backlinks\":true,\"source\":true}}",
+              "eState": "{\"scroll\":0.4410256605881911}"
+            }
+          ]
+        },
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "DND/Character.md",
+            "mode": "preview",
+            "backlinks": true,
+            "source": true
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "f412256737395058",
+    "type": "split",
+    "children": [
+      {
+        "id": "ce18cc1498de74b3",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f8e8ef1a5acafb23",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": []
+            },
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "f165079246443c30",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "c1dd340280b01bb7",
+    "type": "split",
+    "children": [
+      {
+        "id": "2cd29ba6b2d6e115",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "692c49200e876bd6",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          },
+          {
+            "id": "622e582e4a53d1fc",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "DND/Character.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "122924044109e68c",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "DND/Character.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "6ac2dc5b3677af29",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "a055951694f71807",
+  "lastOpenFiles": [
+    "DND/Chapter 4.md",
+    "DND/Character.md",
+    "DND/Paladin Spells.md",
+    "DND/Siraya.md",
+    "Church/Assembled to Love.md",
+    "Bible/46 - 1 Corinthians/1 Cor-11.md",
+    "Bible/58 - Hebrews/Heb-09.md",
+    "Church/Messages.md",
+    "Church/growing up without blowing up.md",
+    "Church/reclaim your future.md"
+  ]
+}

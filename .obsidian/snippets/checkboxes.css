@@ -1,0 +1,908 @@
+
+/* @settings
+name: SlRvb's Checkboxes
+id: checkbox
+settings:
+    - 
+        title: Colorful Task Text
+        description: Add color to the text of the task.
+        id: check-color
+        type: class-toggle
+    - 
+        title: Colorful Task Background
+        description: Add color to the background of the task.
+        id: check-bg
+        type: class-toggle
+    - 
+        title: Normal Task Text
+        description: Reapply regular text color to the text of the task.
+        id: check-text
+        type: class-toggle
+    -
+        title: Checkbox Strikethrough
+        description: Restore default strike through
+        id: check-strike
+        type: class-toggle
+    -
+        title: Checkbox Fixes
+        id: Checkbox-Fixes
+        type: heading
+        level: 2
+        collapsed: true
+    -
+        title: Checkbox Padding Fix
+        description: Toggle off if checklists are misaligned for your current theme.
+        id: chck-pad
+        type: class-toggle
+        default: true
+    - 
+        title: Checkbox Height Adjustment (LP/P/R)
+        description: Preview/Reading Mode Icon adjustment slider.
+        id: chbx-pre-height
+        type: variable-number-slider
+        default: 0
+        format: px
+        min: -8
+        max: 8
+        step: 1
+    - 
+        title: Checkbox Height Adjustment (S)
+        description: Source Mode Icon adjustment slider.
+        id: chbx-ed-height
+        type: variable-number-slider
+        default: 4
+        format: px
+        min: -8
+        max: 8
+        step: 1
+    -
+        title: Checkbox Strike Specific
+        id: Checkbox-Strike-Specific
+        type: heading
+        level: 2
+        collapsed: true
+    -
+        title: "[r] Long Rest Used"
+        id: chst-longrest
+        type: class-toggle
+    -
+        title: "[s] Short Rest Used"
+        id: chst-shortrest
+        type: class-toggle
+*/
+:root {
+  --chbx-ed-height: 4px;
+  --chbx-pre-height: 0px;
+  --chbx-margin: -5px;
+}
+
+.theme-dark {
+  --chbx-q: 253, 175, 0;
+  /*#fdaf00*/
+  --chbx-h: 92, 118, 153;
+  /*#5c7699*/
+  --chbx-d: 62, 69, 82;
+  --chbx-S: var(--light1_x);
+  --chbx-s: var(--color-yellow-rgb);
+  --chbx-L: var(--light1_x);
+  --chbx-r: var(--color-blue-rgb);
+  /*#3e4552*/
+  --chbx-i: 194, 42, 42;
+  /*#c22a2a*/
+  --chbx-a: 248, 114, 181;
+  /*#f872b5*/
+  --chbx-R: 255, 255, 255;
+  /*#aab3ca*/
+  --chbx-id:231, 231, 171;
+  /* #e7e7ab*/
+  --chbx-B: 136, 94, 233;
+  /*#885ee9*/
+  --chbx-P: 79, 165, 79;
+  /*#4fa54f*/
+  --chbx-C: 207, 67, 67;
+  /*#cf4343*/
+  --chbx-N: 133, 91, 65;
+  /*#855b41*/
+  --chbx-b: 230, 129, 63;
+  /*#e6813f*/
+  /*#528bd4*/
+  --chbx-I: 82, 139, 212;
+  /*#528bd4*/
+  --chbx-c: 149, 233, 238;
+  /*#95E9EE*/
+  /*#f9be7b*/
+}
+
+.theme-light {
+  --chbx-q: 253, 175, 0;
+  /*#fdaf00*/
+  --chbx-h: 168, 177, 189;
+  /*#a8b1bd*/
+  --chbx-d: 203, 212, 235;
+  /*#cad3eb*/
+  --chbx-i: 219, 1, 1;
+  /*#db0101*/
+  --chbx-a: 248, 114, 181;
+  /*#f872b5*/
+  --chbx-R: 159, 186, 223;
+  /*#9fbadf*/
+  --chbx-id:202, 199, 0;
+  /* #cac700*/
+  --chbx-B: 182, 118, 255;
+  /*#b676ff*/
+  --chbx-P: 79, 165, 79;
+  /*#4fa54f*/
+  --chbx-C: 214, 108, 108;
+  /*#d66c6c*/
+  --chbx-N: 161, 106, 73;
+  /*#a16a49*/
+  --chbx-b: 251, 146, 76;
+  /*#fb924c*/
+  --chbx-I: 82, 139, 212;
+  /*#528bd4*/
+  --chbx-c: 149, 217, 238;
+  /*#95E9EE*/
+  --chbx-r: 0, 255, 0;
+  /*#f9be7b*/
+  --chbx-L: 255, 0, 0;
+}
+
+/*Restyle Checkboxes*/
+/*Different/Alternate Checkbox*/
+body:not(.alt-chkbx-off) .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task]:is([data-task=X],
+[data-task="-"],
+[data-task="/"],
+[data-task=r],
+[data-task=L],
+[data-task=S],
+[data-task=s]) > .task-list-item-checkbox, body:not(.alt-chkbx-off) .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task]:is([data-task=X],
+[data-task="-"],
+[data-task="/"],
+[data-task=r],
+[data-task=L],
+[data-task=S],
+[data-task=s]) input:is([type=checkbox], [type=checkbox i]):checked, body:not(.alt-chkbx-off) .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task]:is([data-task=X],
+[data-task="-"],
+[data-task="/"],
+[data-task=r],
+[data-task=L],
+[data-task=S],
+[data-task=s]) input:is([type=checkbox], [type=checkbox i]):checked::after, body:not(.alt-chkbx-off) .task-list-item.is-checked:is([data-task=X],
+[data-task="-"],
+[data-task="/"],
+[data-task=r],
+[data-task=L],
+[data-task=S],
+[data-task=s]) > .task-list-item-checkbox, body:not(.alt-chkbx-off) .task-list-item.is-checked:is([data-task=X],
+[data-task="-"],
+[data-task="/"],
+[data-task=r],
+[data-task=L],
+[data-task=S],
+[data-task=s]) input:is([type=checkbox], [type=checkbox i]):checked, body:not(.alt-chkbx-off) .task-list-item.is-checked:is([data-task=X],
+[data-task="-"],
+[data-task="/"],
+[data-task=r],
+[data-task=L],
+[data-task=S],
+[data-task=s]) input:is([type=checkbox], [type=checkbox i]):checked::after {
+  background-image: url();
+  position: relative;
+  -webkit-appearance: none;
+  appearance: none;
+  filter: none;
+  cursor: pointer;
+  background-color: transparent !important;
+  transform: unset;
+  box-shadow: unset;
+  font: var(--rpg);
+  font-family: var(--rpg);
+  font-size: inherit;
+  top: var(--chbx-pre-height);
+  font-weight: 10;
+  border: 0;
+  vertical-align: 0px;
+  text-align: center;
+}
+
+.markdown-source-view.mod-cm6 .task-list-item-checkbox {
+  vertical-align: -2px;
+}
+
+.cm-s-obsidian span.hmd-hidden-token.cm-formatting-task:not([data-task=" "]):not([data-task=x])::before {
+  border: none;
+}
+
+/*Checked Text*/
+.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task]:not([data-task=" "]),
+ul > li.task-list-item.is-checked,
+ol > li.task-list-item.is-checked {
+  color: var(--lines, var(--text-faint));
+  font-weight: bold;
+}
+
+:not(.chkbx-strike) .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task]:not([data-task=" "]),
+:not(.chkbx-strike) .task-list-item.is-checked {
+  text-decoration: unset;
+}
+
+/* Checkbox Text Normal */
+.check-text.check-text.check-text.check-text .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task], .check-text.check-text.check-text.check-text ul li:not([data-task=x]).task-list-item.is-checked {
+  color: unset;
+  font-weight: unset;
+}
+
+/*CodeMirrorOptions Plugin Support*/
+body.theme-dark.hide-tokens.style-check-box .cm-s-obsidian span.cm-formatting-task,
+body.theme-light.hide-tokens.style-check-box .cm-s-obsidian span.cm-formatting-task {
+  filter: unset;
+}
+
+.cm-s-obsidian span.hmd-hidden-token.cm-formatting-task::before {
+  position: absolute;
+  content: " ";
+  font-family: var(--rpg);
+  border: 1px solid var(--accent, var(--interactive-accent));
+  height: 0.9em;
+  width: 0.9em;
+  margin-top: var(--chbx-ed-height);
+  margin-left: 4px;
+  border-radius: 50%;
+}
+
+.cm-s-obsidian span.hmd-hidden-token.cm-formatting-task[data-task=x]::before {
+  background: var(--accent, var(--interactive-accent));
+}
+
+/* Checkbox Icon Setup*/
+.markdown-source-view.mod-cm6 .task-list-item-checkbox::before,
+.markdown-source-view.mod-cm6 .task-list-item-checkbox:not([data-task=x]):not([data-task=" "]) {
+  padding-left: 0px;
+  font-family: var(--rpg);
+  font-weight: 10;
+}
+
+.markdown-source-view.mod-cm6 .task-list-item-checkbox {
+  vertical-align: middle;
+}
+
+/*Fixes*/
+body .markdown-source-view.mod-cm6 .task-list-item-checkbox:not([data-task=x]):before,
+body .markdown-preview-view li:not([data-task=x]) .task-list-item-checkbox:checked::before {
+  background-image: unset;
+  transform: none;
+  padding: unset;
+  -webkit-mask-image: unset;
+  left: unset;
+  font-size: inherit;
+  text-shadow: none;
+}
+
+.markdown-preview-view li:not([data-task=x]) .task-list-item-checkbox:checked {
+  box-shadow: none;
+}
+
+input[type=checkbox]:not([data-task=x]) {
+  padding: initial;
+}
+
+.minimal-light li:not([data-task=x]) input[type=checkbox i]:checked, .minimal-light .cm-s-obsidian input[type=checkbox]:not([data-task=x]):checked,
+.minimal-dark li:not([data-task=x]) input[type=checkbox i]:checked,
+.minimal-dark .cm-s-obsidian input[type=checkbox]:not([data-task=x]):checked {
+  background-color: transparent !important;
+}
+
+.check-bg.check-bg .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task], .check-bg.check-bg .rtl li[data-task].task-list-item.is-checked, .check-bg.check-bg li[data-task].task-list-item.is-checked {
+  border-left: unset;
+}
+
+/*--Checkbox Type Icons--*/
+body:not(.alt-chkbx-off) {
+  /* [X]: Checked: Checkmark */
+  /* [>]: Forward: SVG Plane */
+  /* [D]: Deferred/Scheduled: Calendar */
+  /* [-]: Cancelled/Non-Task: Line */
+  /* [?]: Question: Question Mark */
+  /* [!]: Important: Exclamation Mark */
+  /* [+]: Add: Plus */
+  /* [/]: Half Done: Right Triangle */
+  /* [R]: Research: Magnifying Glass */
+  /* [i]: Idea: Lightbulb */
+  /* [B]: Brainstorm: Bubbles */
+  /* [P]: Pro: Thumbs Up */
+  /* [C]: Con: Thumbs Down */
+  /* [I]: Info: Italicized I */
+  /* [Q]: Quote: Closing Quotation Mark */
+  /* [N]: Note: Open Scroll */
+  /* [b]: Bookmark: Bookmark Flag */
+  /* [p]: Paraphrase */
+  /* [E]: Example */
+  /* [L]: Location */
+  /* [A]: Answer */
+  /* [r]: Answer */
+  /* [c]: Choice */
+  /* [o]: Option */
+  /* [d]: Doing */
+  /* [T]: Time */
+  /* [@]: Person / Character */
+  /* [t]: Talk */
+  /* [O]: Outline */
+  /* [W]: World */
+  /* [F]: Foreshadow */
+  /* [f]: Clue / Find */
+  /* [~]: Conflict */
+  /* [H]: Health */
+  /* [&]: Symbolism */
+  /* [s]: Secret */
+}
+body:not(.alt-chkbx-off) .markdown-source-view.mod-cm6 .task-list-item-checkbox[data-task=X]::before, body:not(.alt-chkbx-off) .cm-s-obsidian span.hmd-hidden-token.cm-formatting-task[data-task=X]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked .task-list-item-checkbox[data-task=X]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=X] > input[type=checkbox]:checked::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=X] p > input[type=checkbox]:checked::before {
+  color: var(--accent2-lite, var(--text-accent));
+  content: "\ec01";
+}
+body:not(.alt-chkbx-off) .markdown-source-view.mod-cm6 .task-list-item-checkbox[data-task="-"]::before, body:not(.alt-chkbx-off) .cm-s-obsidian span.hmd-hidden-token.cm-formatting-task[data-task="-"]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked .task-list-item-checkbox[data-task="-"]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task="-"] > input[type=checkbox]:checked::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task="-"] p > input[type=checkbox]:checked::before {
+  color: rgb(var(--chbx-d));
+  content: "\ec02";
+}
+body:not(.alt-chkbx-off) .markdown-source-view.mod-cm6 .task-list-item-checkbox[data-task="?"]::before, body:not(.alt-chkbx-off) .cm-s-obsidian span.hmd-hidden-token.cm-formatting-task[data-task="?"]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked .task-list-item-checkbox[data-task="?"]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task="?"] > input[type=checkbox]:checked::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task="?"] p > input[type=checkbox]:checked::before {
+  color: rgb(var(--chbx-q));
+  content: "\ec05";
+}
+body:not(.alt-chkbx-off) .markdown-source-view.mod-cm6 .task-list-item-checkbox[data-task="!"]::before, body:not(.alt-chkbx-off) .cm-s-obsidian span.hmd-hidden-token.cm-formatting-task[data-task="!"]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked .task-list-item-checkbox[data-task="!"]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task="!"] > input[type=checkbox]:checked::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task="!"] p > input[type=checkbox]:checked::before {
+  color: rgb(var(--chbx-i));
+  content: "\ec08";
+}
+body:not(.alt-chkbx-off) .markdown-source-view.mod-cm6 .task-list-item-checkbox[data-task="+"]::before, body:not(.alt-chkbx-off) .cm-s-obsidian span.hmd-hidden-token.cm-formatting-task[data-task="+"]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked .task-list-item-checkbox[data-task="+"]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task="+"] > input[type=checkbox]:checked::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task="+"] p > input[type=checkbox]:checked::before {
+  color: rgb(var(--chbx-a));
+  content: "\ec06";
+}
+body:not(.alt-chkbx-off) .markdown-source-view.mod-cm6 .task-list-item-checkbox[data-task="/"]::before, body:not(.alt-chkbx-off) .cm-s-obsidian span.hmd-hidden-token.cm-formatting-task[data-task="/"]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked .task-list-item-checkbox[data-task="/"]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task="/"] > input[type=checkbox]:checked::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task="/"] p > input[type=checkbox]:checked::before {
+  color: var(--accent, var(--interactive-accent));
+  content: "\ec17";
+}
+body:not(.alt-chkbx-off) .markdown-source-view.mod-cm6 .task-list-item-checkbox[data-task=R]::before, body:not(.alt-chkbx-off) .cm-s-obsidian span.hmd-hidden-token.cm-formatting-task[data-task=R]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked .task-list-item-checkbox[data-task=R]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=R] > input[type=checkbox]:checked::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=R] p > input[type=checkbox]:checked::before {
+  color: rgb(var(--chbx-R));
+  content: "\ec07";
+}
+body:not(.alt-chkbx-off) .markdown-source-view.mod-cm6 .task-list-item-checkbox[data-task=i]::before, body:not(.alt-chkbx-off) .cm-s-obsidian span.hmd-hidden-token.cm-formatting-task[data-task=i]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked .task-list-item-checkbox[data-task=i]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=i] > input[type=checkbox]:checked::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=i] p > input[type=checkbox]:checked::before {
+  color: rgb(var(--chbx-id));
+  content: "\ec09";
+}
+body:not(.alt-chkbx-off) .markdown-source-view.mod-cm6 .task-list-item-checkbox[data-task=B]::before, body:not(.alt-chkbx-off) .cm-s-obsidian span.hmd-hidden-token.cm-formatting-task[data-task=B]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked .task-list-item-checkbox[data-task=B]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=B] > input[type=checkbox]:checked::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=B] p > input[type=checkbox]:checked::before {
+  color: rgb(var(--chbx-B));
+  content: "\ec10";
+}
+body:not(.alt-chkbx-off) .markdown-source-view.mod-cm6 .task-list-item-checkbox[data-task=P]::before, body:not(.alt-chkbx-off) .cm-s-obsidian span.hmd-hidden-token.cm-formatting-task[data-task=P]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked .task-list-item-checkbox[data-task=P]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=P] > input[type=checkbox]:checked::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=P] p > input[type=checkbox]:checked::before {
+  color: rgb(var(--chbx-P));
+  content: "\ec11";
+}
+body:not(.alt-chkbx-off) .markdown-source-view.mod-cm6 .task-list-item-checkbox[data-task=C]::before, body:not(.alt-chkbx-off) .cm-s-obsidian span.hmd-hidden-token.cm-formatting-task[data-task=C]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked .task-list-item-checkbox[data-task=C]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=C] > input[type=checkbox]:checked::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=C] p > input[type=checkbox]:checked::before {
+  color: rgb(var(--chbx-C));
+  content: "\ec12";
+}
+body:not(.alt-chkbx-off) .markdown-source-view.mod-cm6 .task-list-item-checkbox[data-task=I]::before, body:not(.alt-chkbx-off) .cm-s-obsidian span.hmd-hidden-token.cm-formatting-task[data-task=I]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked .task-list-item-checkbox[data-task=I]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=I] > input[type=checkbox]:checked::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=I] p > input[type=checkbox]:checked::before {
+  color: rgb(var(--chbx-I));
+  content: "\ec16";
+}
+body:not(.alt-chkbx-off) .markdown-source-view.mod-cm6 .task-list-item-checkbox[data-task=Q]::before, body:not(.alt-chkbx-off) .cm-s-obsidian span.hmd-hidden-token.cm-formatting-task[data-task=Q]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked .task-list-item-checkbox[data-task=Q]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=Q] > input[type=checkbox]:checked::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=Q] p > input[type=checkbox]:checked::before {
+  color: rgb(var(--chbx-R));
+  content: "\ec13";
+}
+body:not(.alt-chkbx-off) .markdown-source-view.mod-cm6 .task-list-item-checkbox[data-task=N]::before, body:not(.alt-chkbx-off) .cm-s-obsidian span.hmd-hidden-token.cm-formatting-task[data-task=N]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked .task-list-item-checkbox[data-task=N]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=N] > input[type=checkbox]:checked::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=N] p > input[type=checkbox]:checked::before {
+  color: rgb(var(--chbx-N));
+  content: "\ec14";
+}
+body:not(.alt-chkbx-off) .markdown-source-view.mod-cm6 .task-list-item-checkbox[data-task=b]::before, body:not(.alt-chkbx-off) .cm-s-obsidian span.hmd-hidden-token.cm-formatting-task[data-task=b]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked .task-list-item-checkbox[data-task=b]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=b] > input[type=checkbox]:checked::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=b] p > input[type=checkbox]:checked::before {
+  color: rgb(var(--chbx-b));
+  content: "\ec15";
+}
+body:not(.alt-chkbx-off) .markdown-source-view.mod-cm6 .task-list-item-checkbox[data-task=p]::before, body:not(.alt-chkbx-off) .cm-s-obsidian span.hmd-hidden-token.cm-formatting-task[data-task=p]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked .task-list-item-checkbox[data-task=p]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=p] > input[type=checkbox]:checked::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=p] p > input[type=checkbox]:checked::before {
+  color: rgb(var(--chbx-R));
+  content: "\ec19";
+}
+body:not(.alt-chkbx-off) .markdown-source-view.mod-cm6 .task-list-item-checkbox[data-task=E]::before, body:not(.alt-chkbx-off) .cm-s-obsidian span.hmd-hidden-token.cm-formatting-task[data-task=E]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked .task-list-item-checkbox[data-task=E]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=E] > input[type=checkbox]:checked::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=E] p > input[type=checkbox]:checked::before {
+  color: rgb(var(--chbx-I));
+  content: "\ec18";
+}
+body:not(.alt-chkbx-off) .markdown-source-view.mod-cm6 .task-list-item-checkbox[data-task=L]::before, body:not(.alt-chkbx-off) .cm-s-obsidian span.hmd-hidden-token.cm-formatting-task[data-task=L]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked .task-list-item-checkbox[data-task=L]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=L] > input[type=checkbox]:checked::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=L] p > input[type=checkbox]:checked::before {
+  color: rgb(var(--chbx-L));
+  content: "\e954";
+}
+body:not(.alt-chkbx-off) .markdown-source-view.mod-cm6 .task-list-item-checkbox[data-task=A]::before, body:not(.alt-chkbx-off) .cm-s-obsidian span.hmd-hidden-token.cm-formatting-task[data-task=A]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked .task-list-item-checkbox[data-task=A]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=A] > input[type=checkbox]:checked::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=A] p > input[type=checkbox]:checked::before {
+  color: rgb(var(--chbx-P));
+  content: "\ec20";
+}
+body:not(.alt-chkbx-off) .markdown-source-view.mod-cm6 .task-list-item-checkbox[data-task=r]::before, body:not(.alt-chkbx-off) .cm-s-obsidian span.hmd-hidden-token.cm-formatting-task[data-task=r]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked .task-list-item-checkbox[data-task=r]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=r] > input[type=checkbox]:checked::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=r] p > input[type=checkbox]:checked::before {
+  color: rgb(var(--chbx-r));
+  content: "\e954";
+}
+body:not(.alt-chkbx-off) .markdown-source-view.mod-cm6 .task-list-item-checkbox[data-task=c]::before, body:not(.alt-chkbx-off) .cm-s-obsidian span.hmd-hidden-token.cm-formatting-task[data-task=c]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked .task-list-item-checkbox[data-task=c]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=c] > input[type=checkbox]:checked::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=c] p > input[type=checkbox]:checked::before {
+  color: rgb(var(--chbx-c));
+  content: "\ec23";
+}
+body:not(.alt-chkbx-off) .markdown-source-view.mod-cm6 .task-list-item-checkbox[data-task=o]::before, body:not(.alt-chkbx-off) .cm-s-obsidian span.hmd-hidden-token.cm-formatting-task[data-task=o]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked .task-list-item-checkbox[data-task=o]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=o] > input[type=checkbox]:checked::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=o] p > input[type=checkbox]:checked::before {
+  color: rgb(var(--chbx-b));
+  content: "\ec24";
+}
+body:not(.alt-chkbx-off) .markdown-source-view.mod-cm6 .task-list-item-checkbox[data-task=d]::before, body:not(.alt-chkbx-off) .cm-s-obsidian span.hmd-hidden-token.cm-formatting-task[data-task=d]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked .task-list-item-checkbox[data-task=d]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=d] > input[type=checkbox]:checked::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=d] p > input[type=checkbox]:checked::before {
+  color: rgb(var(--chbx-I));
+  content: "\ec25";
+}
+body:not(.alt-chkbx-off) .markdown-source-view.mod-cm6 .task-list-item-checkbox[data-task=T]::before, body:not(.alt-chkbx-off) .cm-s-obsidian span.hmd-hidden-token.cm-formatting-task[data-task=T]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked .task-list-item-checkbox[data-task=T]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=T] > input[type=checkbox]:checked::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=T] p > input[type=checkbox]:checked::before {
+  color: rgb(var(--chbx-R));
+  content: "\ec26";
+}
+body:not(.alt-chkbx-off) .markdown-source-view.mod-cm6 .task-list-item-checkbox[data-task="@"]::before, body:not(.alt-chkbx-off) .cm-s-obsidian span.hmd-hidden-token.cm-formatting-task[data-task="@"]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked .task-list-item-checkbox[data-task="@"]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task="@"] > input[type=checkbox]:checked::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task="@"] p > input[type=checkbox]:checked::before {
+  color: rgb(var(--chbx-b));
+  content: "\e900";
+}
+body:not(.alt-chkbx-off) .markdown-source-view.mod-cm6 .task-list-item-checkbox[data-task=t]::before, body:not(.alt-chkbx-off) .cm-s-obsidian span.hmd-hidden-token.cm-formatting-task[data-task=t]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked .task-list-item-checkbox[data-task=t]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=t] > input[type=checkbox]:checked::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=t] p > input[type=checkbox]:checked::before {
+  color: rgb(var(--chbx-R));
+  content: "\ec27";
+}
+body:not(.alt-chkbx-off) .markdown-source-view.mod-cm6 .task-list-item-checkbox[data-task=O]::before, body:not(.alt-chkbx-off) .cm-s-obsidian span.hmd-hidden-token.cm-formatting-task[data-task=O]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked .task-list-item-checkbox[data-task=O]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=O] > input[type=checkbox]:checked::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=O] p > input[type=checkbox]:checked::before {
+  color: var(--accent, var(--interactive-accent));
+  content: "\e805";
+}
+body:not(.alt-chkbx-off) .markdown-source-view.mod-cm6 .task-list-item-checkbox[data-task=W]::before, body:not(.alt-chkbx-off) .cm-s-obsidian span.hmd-hidden-token.cm-formatting-task[data-task=W]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked .task-list-item-checkbox[data-task=W]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=W] > input[type=checkbox]:checked::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=W] p > input[type=checkbox]:checked::before {
+  color: rgb(var(--chbx-P));
+  content: "\e813";
+}
+body:not(.alt-chkbx-off) .markdown-source-view.mod-cm6 .task-list-item-checkbox[data-task=F]::before, body:not(.alt-chkbx-off) .cm-s-obsidian span.hmd-hidden-token.cm-formatting-task[data-task=F]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked .task-list-item-checkbox[data-task=F]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=F] > input[type=checkbox]:checked::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=F] p > input[type=checkbox]:checked::before {
+  color: rgb(var(--chbx-h));
+  content: "\ec28";
+  margin-left: -4px;
+}
+body:not(.alt-chkbx-off) .markdown-source-view.mod-cm6 .task-list-item-checkbox[data-task=f]::before, body:not(.alt-chkbx-off) .cm-s-obsidian span.hmd-hidden-token.cm-formatting-task[data-task=f]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked .task-list-item-checkbox[data-task=f]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=f] > input[type=checkbox]:checked::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=f] p > input[type=checkbox]:checked::before {
+  color: rgb(var(--chbx-N));
+  content: "\e81e";
+}
+body:not(.alt-chkbx-off) .markdown-source-view.mod-cm6 .task-list-item-checkbox[data-task="~"]::before, body:not(.alt-chkbx-off) .cm-s-obsidian span.hmd-hidden-token.cm-formatting-task[data-task="~"]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked .task-list-item-checkbox[data-task="~"]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task="~"] > input[type=checkbox]:checked::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task="~"] p > input[type=checkbox]:checked::before {
+  color: rgb(var(--chbx-C));
+  content: "\ec33";
+}
+body:not(.alt-chkbx-off) .markdown-source-view.mod-cm6 .task-list-item-checkbox[data-task=H]::before, body:not(.alt-chkbx-off) .cm-s-obsidian span.hmd-hidden-token.cm-formatting-task[data-task=H]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked .task-list-item-checkbox[data-task=H]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=H] > input[type=checkbox]:checked::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=H] p > input[type=checkbox]:checked::before {
+  color: rgb(var(--chbx-C));
+  content: "\ec30";
+}
+body:not(.alt-chkbx-off) .markdown-source-view.mod-cm6 .task-list-item-checkbox[data-task="&"]::before, body:not(.alt-chkbx-off) .cm-s-obsidian span.hmd-hidden-token.cm-formatting-task[data-task="&"]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked .task-list-item-checkbox[data-task="&"]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task="&"] > input[type=checkbox]:checked::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task="&"] p > input[type=checkbox]:checked::before {
+  color: rgb(var(--chbx-B));
+  content: "\ec32";
+}
+body:not(.alt-chkbx-off) .markdown-source-view.mod-cm6 .task-list-item-checkbox[data-task=S]::before, body:not(.alt-chkbx-off) .cm-s-obsidian span.hmd-hidden-token.cm-formatting-task[data-task=S]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked .task-list-item-checkbox[data-task=S]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=S] > input[type=checkbox]:checked::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=S] p > input[type=checkbox]:checked::before {
+  color: rgb(var(--chbx-S));
+  content: "\ea18";
+}
+body:not(.alt-chkbx-off) .markdown-source-view.mod-cm6 .task-list-item-checkbox[data-task=s]::before, body:not(.alt-chkbx-off) .cm-s-obsidian span.hmd-hidden-token.cm-formatting-task[data-task=s]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked .task-list-item-checkbox[data-task=s]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=s] > input[type=checkbox]:checked::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=s] p > input[type=checkbox]:checked::before {
+  color: rgb(var(--chbx-s));
+  content: "\ea18";
+}
+
+/*--Checkbox Text Colors--*/
+.check-color .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=X], .check-color span:not(.cm-link):not(.cm-inline-code) span[data-task=X], .check-color.check-color ul li[data-task=X].task-list-item.is-checked {
+  color: var(--text-faint);
+}
+.check-color .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=">"], .check-color span:not(.cm-link):not(.cm-inline-code) span[data-task=">"], .check-color.check-color ul li[data-task=">"].task-list-item.is-checked {
+  color: var(--text-normal);
+}
+.check-color .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=D], .check-color span:not(.cm-link):not(.cm-inline-code) span[data-task=D], .check-color.check-color ul li[data-task=D].task-list-item.is-checked {
+  color: rgb(var(--chbx-h));
+}
+.check-color .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="-"], .check-color span[data-task="-"], .check-color.check-color ul li[data-task="-"].task-list-item.is-checked {
+  color: rgb(var(--chbx-d));
+}
+.check-color .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="?"], .check-color span:not(.cm-link):not(.cm-inline-code) span[data-task="?"], .check-color.check-color ul li[data-task="?"].task-list-item.is-checked {
+  color: rgb(var(--chbx-q));
+}
+.check-color .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="!"], .check-color span:not(.cm-link):not(.cm-inline-code) span[data-task="!"], .check-color.check-color ul li[data-task="!"].task-list-item.is-checked {
+  color: rgb(var(--chbx-i));
+}
+.check-color .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="+"], .check-color span:not(.cm-link):not(.cm-inline-code) span[data-task="+"], .check-color.check-color ul li[data-task="+"].task-list-item.is-checked {
+  color: rgb(var(--chbx-a));
+}
+.check-color .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="/"], .check-color span:not(.cm-link):not(.cm-inline-code) span[data-task="/"], .check-color.check-color ul li[data-task="/"].task-list-item.is-checked:not(::before) {
+  background: linear-gradient(to right, var(--accent, var(--interactive-accent)) 0%, var(--chbx-d) 10%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.check-color .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="/"], .check-color span:not(.cm-link):not(.cm-inline-code) span[data-task="/"] {
+  background: linear-gradient(to right, var(--accent, var(--interactive-accent)) 0%, var(--chbx-d) 80%);
+  -webkit-background-clip: text;
+}
+.check-color .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=R], .check-color span:not(.cm-link):not(.cm-inline-code) span[data-task=R], .check-color.check-color ul li[data-task=R].task-list-item.is-checked {
+  color: rgb(var(--chbx-R));
+}
+.check-color .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=i], .check-color span:not(.cm-link):not(.cm-inline-code) span[data-task=i], .check-color.check-color ul li[data-task=i].task-list-item.is-checked {
+  color: rgb(var(--chbx-id));
+}
+.check-color .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=B], .check-color span:not(.cm-link):not(.cm-inline-code) span[data-task=B], .check-color.check-color ul li[data-task=B].task-list-item.is-checked {
+  color: rgb(var(--chbx-B));
+}
+.check-color .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=P], .check-color span:not(.cm-link):not(.cm-inline-code) span[data-task=P], .check-color.check-color ul li[data-task=P].task-list-item.is-checked {
+  color: rgb(var(--chbx-P));
+}
+.check-color .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=C], .check-color span:not(.cm-link):not(.cm-inline-code) span[data-task=C], .check-color.check-color ul li[data-task=C].task-list-item.is-checked {
+  color: rgb(var(--chbx-C));
+}
+.check-color .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=I], .check-color span:not(.cm-link):not(.cm-inline-code) span[data-task=I], .check-color.check-color ul li[data-task=I].task-list-item.is-checked {
+  color: rgb(var(--chbx-I));
+}
+.check-color .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=Q], .check-color span:not(.cm-link):not(.cm-inline-code) span[data-task=Q], .check-color.check-color ul li[data-task=Q].task-list-item.is-checked {
+  color: rgb(var(--chbx-R));
+}
+.check-color .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=N], .check-color span:not(.cm-link):not(.cm-inline-code) span[data-task=N], .check-color.check-color ul li[data-task=N].task-list-item.is-checked {
+  color: rgb(var(--chbx-N));
+}
+.check-color .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=b], .check-color span:not(.cm-link):not(.cm-inline-code) span[data-task=b], .check-color.check-color ul li[data-task=b].task-list-item.is-checked {
+  color: rgb(var(--chbx-b));
+}
+.check-color .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=p], .check-color span:not(.cm-link):not(.cm-inline-code) span[data-task=p], .check-color.check-color ul li[data-task=p].task-list-item.is-checked {
+  color: rgb(var(--chbx-R));
+}
+.check-color .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=L], .check-color span:not(.cm-link):not(.cm-inline-code) span[data-task=L], .check-color.check-color ul li[data-task=L].task-list-item.is-checked {
+  color: rgb(var(--chbx-L));
+}
+.check-color .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=E], .check-color span:not(.cm-link):not(.cm-inline-code) span[data-task=E], .check-color.check-color ul li[data-task=E].task-list-item.is-checked {
+  color: rgb(var(--chbx-I));
+}
+.check-color .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=A], .check-color span:not(.cm-link):not(.cm-inline-code) span[data-task=A], .check-color.check-color ul li[data-task=A].task-list-item.is-checked {
+  color: rgb(var(--chbx-P));
+}
+.check-color .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=r], .check-color span:not(.cm-link):not(.cm-inline-code) span[data-task=r], .check-color.check-color ul li[data-task=r].task-list-item.is-checked {
+  color: rgb(var(--chbx-r));
+}
+.check-color .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=c], .check-color span:not(.cm-link):not(.cm-inline-code) span[data-task=c], .check-color.check-color ul li[data-task=c].task-list-item.is-checked {
+  color: rgb(var(--chbx-c));
+}
+.check-color .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=d], .check-color span:not(.cm-link):not(.cm-inline-code) span[data-task=d], .check-color.check-color ul li[data-task=d].task-list-item.is-checked {
+  color: rgb(var(--chbx-I));
+}
+.check-color .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=T], .check-color span:not(.cm-link):not(.cm-inline-code) span[data-task=T], .check-color.check-color ul li[data-task=T].task-list-item.is-checked {
+  color: rgb(var(--chbx-R));
+}
+.check-color .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="@"], .check-color span:not(.cm-link):not(.cm-inline-code) span[data-task="@"], .check-color.check-color ul li[data-task="@"].task-list-item.is-checked {
+  color: rgb(var(--chbx-b));
+}
+.check-color .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=t], .check-color span:not(.cm-link):not(.cm-inline-code) span[data-task=t], .check-color.check-color ul li[data-task=t].task-list-item.is-checked {
+  color: rgb(var(--chbx-R));
+}
+.check-color .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=O], .check-color span:not(.cm-link):not(.cm-inline-code) span[data-task=O], .check-color.check-color ul li[data-task=O].task-list-item.is-checked {
+  color: var(--text-normal);
+}
+.check-color .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="~"], .check-color span:not(.cm-link):not(.cm-inline-code) span[data-task="~"], .check-color.check-color ul li[data-task="~"].task-list-item.is-checked {
+  color: rgb(var(--chbx-C));
+}
+.check-color .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=W], .check-color span:not(.cm-link):not(.cm-inline-code) span[data-task=W], .check-color.check-color ul li[data-task=W].task-list-item.is-checked {
+  color: rgb(var(--chbx-P));
+}
+.check-color .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=f], .check-color span:not(.cm-link):not(.cm-inline-code) span[data-task=f], .check-color.check-color ul li[data-task=f].task-list-item.is-checked {
+  color: rgb(var(--chbx-N));
+}
+.check-color .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=F], .check-color span:not(.cm-link):not(.cm-inline-code) span[data-task=F], .check-color.check-color ul li[data-task=F].task-list-item.is-checked {
+  color: rgb(var(--chbx-h));
+}
+.check-color .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=H], .check-color span:not(.cm-link):not(.cm-inline-code) span[data-task=H], .check-color.check-color ul li[data-task=H].task-list-item.is-checked {
+  color: rgb(var(--chbx-a));
+}
+.check-color .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="&"], .check-color span:not(.cm-link):not(.cm-inline-code) span[data-task="&"], .check-color.check-color ul li[data-task="&"].task-list-item.is-checked {
+  color: rgb(var(--chbx-B));
+}
+.check-color .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=S], .check-color span:not(.cm-link):not(.cm-inline-code) span[data-task=S], .check-color.check-color ul li[data-task=S].task-list-item.is-checked {
+  color: rgb(var(--chbx-S));
+}
+.check-color .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=s], .check-color span:not(.cm-link):not(.cm-inline-code) span[data-task=s], .check-color.check-color ul li[data-task=s].task-list-item.is-checked {
+  color: rgb(var(--chbx-s));
+}
+
+/*--Checkbox Background--*/
+.check-bg .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=X], .check-bg li[data-task=X].task-list-item.is-checked {
+  border-left: 2px solid rgb(var(--chbx-R));
+  background: rgba(var(--chbx-R), 20%);
+  /*#bbcbff17*/
+}
+.check-bg .rtl li[data-task=X].task-list-item.is-checked {
+  border-left: unset;
+  border-right: 2px solid rgb(var(--chbx-R));
+}
+.check-bg .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=">"], .check-bg li[data-task=">"].task-list-item.is-checked {
+  border-left: 2px double rgb(var(--chbx-h));
+  background: rgba(var(--chbx-h), 20%);
+}
+.check-bg .rtl li[data-task=">"].task-list-item.is-checked {
+  border-left: unset;
+  border-right: 2px double rgb(var(--chbx-h));
+}
+.check-bg .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=D], .check-bg li[data-task=D].task-list-item.is-checked {
+  border-left: 2px solid rgb(var(--chbx-h));
+  background: rgba(var(--chbx-h), 20%);
+}
+.check-bg .rtl li[data-task=D].task-list-item.is-checked {
+  border-left: unset;
+  border-right: 2px solid rgb(var(--chbx-h));
+}
+.check-bg .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="-"], .check-bg li[data-task="-"].task-list-item.is-checked {
+  border-left: 2px solid rgb(var(--chbx-d));
+  background: rgba(var(--chbx-d), 20%);
+}
+.check-bg .rtl li[data-task="-"].task-list-item.is-checked {
+  border-left: unset;
+  border-right: 2px solid rgb(var(--chbx-d));
+}
+.check-bg .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="?"], .check-bg li[data-task="?"].task-list-item.is-checked {
+  border-left: 2px dashed rgb(var(--chbx-q));
+  background: rgba(var(--chbx-q), 20%);
+  /*#fac35d17*/
+}
+.check-bg .rtl li[data-task="?"].task-list-item.is-checked {
+  border-left: unset;
+  border-right: 2px dashed rgb(var(--chbx-q));
+}
+.check-bg .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="!"], .check-bg li[data-task="!"].task-list-item.is-checked {
+  border-left: 2px solid rgb(var(--chbx-i));
+  background: rgba(var(--chbx-i), 20%);
+}
+.check-bg .rtl li[data-task="!"].task-list-item.is-checked {
+  border-left: unset;
+  border-right: 2px solid rgb(var(--chbx-i));
+}
+.check-bg .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="+"], .check-bg li[data-task="+"].task-list-item.is-checked {
+  border-left: 2px dashed rgb(var(--chbx-a));
+  background: rgba(var(--chbx-a), 20%);
+}
+.check-bg .rtl li[data-task="+"].task-list-item.is-checked {
+  border-left: unset;
+  border-right: 2px dashed rgb(var(--chbx-a));
+}
+.check-bg .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="/"], .check-bg li[data-task="/"].task-list-item.is-checked {
+  border-left: 2px dashed rgb(var(--chbx-R));
+  background: linear-gradient(to left, var(--accent, var(--interactive-accent)) 0%, transparent 1%);
+}
+.check-bg .rtl li[data-task="/"].task-list-item.is-checked {
+  border-left: unset;
+  border-right: 2px dashed rgb(var(--chbx-R));
+}
+.check-bg .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=R], .check-bg li[data-task=R].task-list-item.is-checked {
+  border-left: 2px dashed rgb(var(--chbx-R));
+  background: rgba(var(--chbx-R), 20%);
+  /*#bbcbff17*/
+}
+.check-bg .rtl li[data-task=R].task-list-item.is-checked {
+  border-left: unset;
+  border-right: 2px dashed rgb(var(--chbx-R));
+}
+.check-bg .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=i], .check-bg li[data-task=i].task-list-item.is-checked {
+  border-left: 2px dashed rgb(var(--chbx-id));
+  background: rgba(var(--chbx-id), 20%);
+}
+.check-bg .rtl li[data-task=i].task-list-item.is-checked {
+  border-left: unset;
+  border-right: 2px dashed rgb(var(--chbx-id));
+}
+.check-bg .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=B], .check-bg li[data-task=B].task-list-item.is-checked {
+  border-left: 2px double rgb(var(--chbx-B));
+  background: rgba(var(--chbx-B), 20%);
+  /*#945dfa25*/
+}
+.check-bg .rtl li[data-task=B].task-list-item.is-checked {
+  border-left: unset;
+  border-right: 2px double rgb(var(--chbx-B));
+}
+.check-bg .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=P], .check-bg li[data-task=P].task-list-item.is-checked {
+  border-left: 2px solid rgb(var(--chbx-P));
+  background: rgba(var(--chbx-P), 20%);
+}
+.check-bg .rtl li[data-task=P].task-list-item.is-checked {
+  border-left: unset;
+  border-right: 2px solid rgb(var(--chbx-P));
+}
+.check-bg .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=C], .check-bg li[data-task=C].task-list-item.is-checked {
+  border-left: 2px solid rgb(var(--chbx-C));
+  background: rgba(var(--chbx-C), 20%);
+}
+.check-bg .rtl li[data-task=C].task-list-item.is-checked {
+  border-left: unset;
+  border-right: 2px solid rgb(var(--chbx-C));
+}
+.check-bg .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=I], .check-bg li[data-task=I].task-list-item.is-checked {
+  border-left: 2px solid rgb(var(--chbx-I));
+  background: rgba(var(--chbx-I), 20%);
+}
+.check-bg .rtl li[data-task=I].task-list-item.is-checked {
+  border-left: unset;
+  border-right: 2px solid rgb(var(--chbx-I));
+}
+.check-bg .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=Q], .check-bg li[data-task=Q].task-list-item.is-checked {
+  border-left: 2px solid rgb(var(--chbx-R));
+  border-right: 2px solid rgb(var(--chbx-R));
+  background: rgba(var(--chbx-R), 20%);
+}
+.check-bg .rtl li[data-task=Q].task-list-item.is-checked {
+  border-left: 2px solid rgb(var(--chbx-R));
+  border-right: 2px solid rgb(var(--chbx-R));
+}
+.check-bg .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=N], .check-bg li[data-task=N].task-list-item.is-checked {
+  border-left: 2px solid rgb(var(--chbx-N));
+  background: rgba(var(--chbx-N), 20%);
+}
+.check-bg .rtl li[data-task=N].task-list-item.is-checked {
+  border-left: unset;
+  border-right: 2px solid rgb(var(--chbx-N));
+}
+.check-bg .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=b], .check-bg li[data-task=b].task-list-item.is-checked {
+  border-left: 2px solid rgb(var(--chbx-b));
+  background: rgba(var(--chbx-b), 20%);
+}
+.check-bg .rtl li[data-task=b].task-list-item.is-checked {
+  border-left: unset;
+  border-right: 2px solid rgb(var(--chbx-b));
+}
+.check-bg .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=p], .check-bg li[data-task=p].task-list-item.is-checked {
+  border-left: 2px solid rgb(var(--chbx-R));
+  background: rgba(var(--chbx-R), 20%);
+}
+.check-bg .rtl li[data-task=p].task-list-item.is-checked {
+  border-left: unset;
+  border-right: 2px solid rgb(var(--chbx-R));
+}
+.check-bg .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=L], .check-bg li[data-task=L].task-list-item.is-checked {
+  border-left: 2px solid rgb(var(--chbx-L));
+  background: rgba(var(--chbx-L), 20%);
+}
+.check-bg .rtl li[data-task=L].task-list-item.is-checked {
+  border-left: unset;
+  border-right: 2px solid rgb(var(--chbx-L));
+}
+.check-bg .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=E], .check-bg li[data-task=E].task-list-item.is-checked {
+  border-left: 2px solid rgb(var(--chbx-I));
+  background: rgba(var(--chbx-I), 20%);
+}
+.check-bg .rtl li[data-task=E].task-list-item.is-checked {
+  border-left: unset;
+  border-right: 2px solid rgb(var(--chbx-I));
+}
+.check-bg .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=A], .check-bg li[data-task=A].task-list-item.is-checked {
+  border-left: 2px solid rgb(var(--chbx-P));
+  background: rgba(var(--chbx-P), 20%);
+}
+.check-bg .rtl li[data-task=A].task-list-item.is-checked {
+  border-left: unset;
+  border-right: 2px solid rgb(var(--chbx-P));
+}
+.check-bg .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=r], .check-bg li[data-task=r].task-list-item.is-checked {
+  border-left: 2px solid rgb(var(--chbx-r));
+  background: rgba(var(--chbx-r), 20%);
+}
+.check-bg .rtl li[data-task=r].task-list-item.is-checked {
+  border-left: unset;
+  border-right: 2px solid rgb(var(--chbx-r));
+}
+.check-bg .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=c], .check-bg li[data-task=c].task-list-item.is-checked {
+  border-left: 2px solid rgb(var(--chbx-c));
+  background: rgba(var(--chbx-c), 20%);
+}
+.check-bg .rtl li[data-task=c].task-list-item.is-checked {
+  border-left: unset;
+  border-right: 2px solid rgb(var(--chbx-c));
+}
+.check-bg .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=d], .check-bg li[data-task=d].task-list-item.is-checked {
+  border-left: 2px solid rgb(var(--chbx-I));
+  background: rgba(var(--chbx-I), 20%);
+}
+.check-bg .rtl li[data-task=d].task-list-item.is-checked {
+  border-left: unset;
+  border-right: 2px solid rgb(var(--chbx-I));
+}
+.check-bg .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=T], .check-bg li[data-task=T].task-list-item.is-checked {
+  border-left: 2px solid rgb(var(--chbx-R));
+  background: rgba(var(--chbx-R), 20%);
+}
+.check-bg .rtl li[data-task=T].task-list-item.is-checked {
+  border-left: unset;
+  border-right: 2px solid rgb(var(--chbx-R));
+}
+.check-bg .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="@"], .check-bg li[data-task="@"].task-list-item.is-checked {
+  border-left: 2px solid rgb(var(--chbx-b));
+  background: rgba(var(--chbx-b), 20%);
+}
+.check-bg .rtl li[data-task="@"].task-list-item.is-checked {
+  border-left: unset;
+  border-right: 2px solid rgb(var(--chbx-b));
+}
+.check-bg .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=t], .check-bg li[data-task=t].task-list-item.is-checked {
+  border-left: 2px solid rgb(var(--chbx-R));
+  background: rgba(var(--chbx-R), 20%);
+}
+.check-bg .rtl li[data-task=t].task-list-item.is-checked {
+  border-left: unset;
+  border-right: 2px solid rgb(var(--chbx-R));
+}
+.check-bg .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=O], .check-bg li[data-task=O].task-list-item.is-checked {
+  border-left: 2px solid var(--interactive-accent);
+  background: var(--background-modifier-active-hover);
+}
+.check-bg .rtl li[data-task=O].task-list-item.is-checked {
+  border-left: unset;
+  border-right: 2px solid var(--interactive-accent);
+}
+.check-bg .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=W], .check-bg li[data-task=W].task-list-item.is-checked {
+  border-left: 2px solid rgb(var(--chbx-P));
+  background: rgba(var(--chbx-P), 20%);
+}
+.check-bg .rtl li[data-task=W].task-list-item.is-checked {
+  border-left: unset;
+  border-right: 2px solid rgb(var(--chbx-P));
+}
+.check-bg .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=f], .check-bg li[data-task=f].task-list-item.is-checked {
+  border-left: 2px solid rgb(var(--chbx-N));
+  background: rgba(var(--chbx-N), 20%);
+}
+.check-bg .rtl li[data-task=f].task-list-item.is-checked {
+  border-left: unset;
+  border-right: 2px solid rgb(var(--chbx-N));
+}
+.check-bg .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=F], .check-bg li[data-task=F].task-list-item.is-checked {
+  border-left: 2px solid rgb(var(--chbx-h));
+  background: rgba(var(--chbx-h), 20%);
+}
+.check-bg .rtl li[data-task=F].task-list-item.is-checked {
+  border-left: unset;
+  border-right: 2px solid rgb(var(--chbx-h));
+}
+.check-bg .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="~"], .check-bg li[data-task="~"].task-list-item.is-checked {
+  border-left: 2px solid rgb(var(--chbx-C));
+  background: rgba(var(--chbx-C), 20%);
+}
+.check-bg .rtl li[data-task="~"].task-list-item.is-checked {
+  border-left: unset;
+  border-right: 2px solid rgb(var(--chbx-C));
+}
+.check-bg .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=H], .check-bg li[data-task=H].task-list-item.is-checked {
+  border-left: 2px solid rgb(var(--chbx-a));
+  background: rgba(var(--chbx-a), 20%);
+}
+.check-bg .rtl li[data-task=H].task-list-item.is-checked {
+  border-left: unset;
+  border-right: 2px solid rgb(var(--chbx-a));
+}
+.check-bg .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="&"], .check-bg li[data-task="&"].task-list-item.is-checked {
+  border-left: 2px solid rgb(var(--chbx-B));
+  background: rgba(var(--chbx-B), 20%);
+}
+.check-bg .rtl li[data-task="&"].task-list-item.is-checked {
+  border-left: unset;
+  border-right: 2px solid rgb(var(--chbx-B));
+}
+.check-bg .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=S], .check-bg li[data-task=S].task-list-item.is-checked {
+  border-left: 2px solid rgb(var(--chbx-S));
+  background: rgba(var(--chbx-S), 20%);
+}
+.check-bg .rtl li[data-task=S].task-list-item.is-checked {
+  border-left: unset;
+  border-right: 2px solid rgb(var(--chbx-S));
+}
+.check-bg .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=s], .check-bg li[data-task=s].task-list-item.is-checked {
+  border-left: 2px solid rgb(var(--chbx-s));
+  background: rgba(var(--chbx-s), 20%);
+}
+.check-bg .rtl li[data-task=s].task-list-item.is-checked {
+  border-left: unset;
+  border-right: 2px solid rgb(var(--chbx-s));
+}
+
+/*Hide Border For LP (Aligns Items Strangely) */
+body.check-bg .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task] {
+  border: 0;
+}
+
+/*Restore Strike Throughs*/
+.check-strike .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task]:not([data-task=" "]), .check-strike .markdown-preview-view ul > li.task-list-item.is-checked, .check-strike .markdown-preview-view ol > li.task-list-item.is-checked {
+  text-decoration: line-through 2px;
+}
+
+.chst-longrest.chst-longrest .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=r],
+.chst-longrest ul li[data-task=r].task-list-item.is-checked,
+.chst-shortrest.chst-shortrest .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=s],
+.chst-shortrest ul li[data-task=s].task-list-item.is-checked {
+  text-decoration: line-through 2px;
+}
+
+

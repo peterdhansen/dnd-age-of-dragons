@@ -1,0 +1,9 @@
+.markdown-preview-view.dnd ul > li.task-list-item.is-checked {
+  text-decoration:none ;
+  color:var(--faded-orange);
+}
+
+.markdown-preview-view.dnd ol > li.task-list-item.is-checked {
+  text-decoration:none;
+  color:var(--faded-orange);
+}

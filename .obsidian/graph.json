@@ -1,0 +1,44 @@
+{
+  "collapse-filter": false,
+  "search": "path:Spell",
+  "showTags": false,
+  "showAttachments": false,
+  "hideUnresolved": false,
+  "showOrphans": true,
+  "collapse-color-groups": true,
+  "colorGroups": [
+    {
+      "query": "path:Church",
+      "color": {
+        "a": 1,
+        "rgb": 14701138
+      }
+    },
+    {
+      "query": "path:DND -path:Spell",
+      "color": {
+        "a": 1,
+        "rgb": 14725458
+      }
+    },
+    {
+      "query": "path:Spell",
+      "color": {
+        "a": 1,
+        "rgb": 11657298
+      }
+    }
+  ],
+  "collapse-display": false,
+  "showArrow": true,
+  "textFadeMultiplier": -1.7,
+  "nodeSizeMultiplier": 1.78358974358974,
+  "lineSizeMultiplier": 4.23696695963542,
+  "collapse-forces": false,
+  "centerStrength": 0.319417317708333,
+  "repelStrength": 11.4689127604167,
+  "linkStrength": 0.596720377604167,
+  "linkDistance": 144,
+  "scale": 0.4585207637232039,
+  "close": true
+}

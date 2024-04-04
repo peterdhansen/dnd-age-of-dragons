@@ -1,0 +1,52 @@
+{
+  "promptDelete": false,
+  "fileSortOrder": "byModifiedTime",
+  "alwaysUpdateLinks": true,
+  "spellcheckDictionary": [
+    "Ruch",
+    "Solera",
+    "Gude",
+    "Greenist"
+  ],
+  "vimMode": true,
+  "mobileToolbarCommands": [
+    "editor:insert-wikilink",
+    "editor:set-heading",
+    "editor:undo",
+    "editor:redo",
+    "editor:insert-tag",
+    "editor:toggle-bold",
+    "editor:toggle-italics",
+    "editor:unindent-list",
+    "editor:indent-list",
+    "editor:toggle-bullet-list",
+    "editor:toggle-numbered-list",
+    "editor:attach-file",
+    "editor:insert-callout",
+    "editor:insert-embed",
+    "editor:toggle-strikethrough",
+    "editor:toggle-highlight",
+    "editor:toggle-code",
+    "editor:toggle-blockquote",
+    "editor:insert-link",
+    "editor:toggle-checklist-status",
+    "editor:toggle-keyboard",
+    "editor:configure-toolbar",
+    "audio-recorder:start",
+    "audio-recorder:stop"
+  ],
+  "defaultViewMode": "preview",
+  "legacyEditor": false,
+  "livePreview": false,
+  "newFileLocation": "current",
+  "attachmentFolderPath": "./",
+  "spellcheck": true,
+  "autoPairBrackets": false,
+  "pdfExportSettings": {
+    "includeName": true,
+    "pageSize": "Letter",
+    "landscape": false,
+    "margin": "0",
+    "downscalePercent": 100
+  }
+}

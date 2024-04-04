@@ -1,0 +1,248 @@
+{
+  "main": {
+    "id": "bdcdf9cf4be9e2e4",
+    "type": "split",
+    "children": [
+      {
+        "id": "8296a9a6442dc68e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b23722ef080fb918",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tasks.md",
+                "mode": "preview",
+                "source": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "f412256737395058",
+    "type": "split",
+    "children": [
+      {
+        "id": "ce18cc1498de74b3",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f8e8ef1a5acafb23",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "byModifiedTime"
+              }
+            }
+          },
+          {
+            "id": "f165079246443c30",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": true,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "e86a265d6fa64001",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          },
+          {
+            "id": "b4f60b47c8fd9124",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 241.5
+  },
+  "right": {
+    "id": "c1dd340280b01bb7",
+    "type": "split",
+    "children": [
+      {
+        "id": "2cd29ba6b2d6e115",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "692c49200e876bd6",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          },
+          {
+            "id": "622e582e4a53d1fc",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Tasks.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": false
+              }
+            }
+          },
+          {
+            "id": "122924044109e68c",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Tasks.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": false
+              }
+            }
+          },
+          {
+            "id": "6ac2dc5b3677af29",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "26fdf94189d45c17",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          },
+          {
+            "id": "86a0ee62fb41668d",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
+          },
+          {
+            "id": "5d216359cde68662",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Tasks.md"
+              }
+            }
+          },
+          {
+            "id": "949cef5923bbaf7d",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              }
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "horizontal",
+    "width": 250.5,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "audio-recorder:Start/stop recording": false,
+      "workspaces:Manage workspace layouts": false,
+      "templates:Insert template": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "command-palette:Open command palette": false,
+      "markdown-importer:Open format converter": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false
+    }
+  },
+  "active": "b23722ef080fb918",
+  "lastOpenFiles": [
+    "Tasks.md",
+    "Titus/Resources.md",
+    "Index.md",
+    "Archive/Character-Devotion.md",
+    "Haldir/Character.md",
+    "Titus/Character.md",
+    "Chapter 6.md",
+    "Mentoring/Romans - Precept Upon Precept/Lesson 1.md",
+    "Mentoring/Romans - Precept Upon Precept/Lesson 13 - Lecture.md",
+    "Bible/45 - Romans/Rom-05.md",
+    "Mentoring/Romans - Precept Upon Precept/Lesson 13 - Notes.md",
+    "DND/Chapter 6.md",
+    "DND/Titus/Paladin Spells.md",
+    "Excalidraw/Drawing 2024-03-28 21.25.11.excalidraw.md",
+    "DND/Titus/Attributes.md",
+    "DND/Titus/Character.md",
+    "DND/Titus/Resources.md",
+    "Bible/58 - Hebrews/Heb-09.md",
+    "DND/Chapter 4.md",
+    "DND/Chapter 5.md",
+    "DND/Chapter 7.md",
+    "DND/Hordekeepers.md",
+    "DND/Heist Notes.md",
+    "Bible/58 - Hebrews/Heb-11.md",
+    "Bible/01 - Genesis/Gen-22.md",
+    "DND/~syncthing~Chapter 6.md.tmp",
+    "Mentoring/Romans - Precept Upon Precept/Lesson 12 - Cross Referencing Chapter four.md",
+    "DND/Age of Dragons Canvas.canvas",
+    "Church/~syncthing~Overcoming the Fear of Failiure.md.tmp",
+    "Church/~syncthing~Messages.md.tmp",
+    "Camping/Pasted image 20220721001720.png",
+    "Camping/Pasted image 20220705232209.png",
+    "Camping/Willow-River_Bike-Trails-Map.pdf",
+    "Camping/Willow-River_Map.pdf",
+    "Camping/Unconfirmed 586161.crdownload",
+    "Camping/Willow River Summer Trails Map [PDF].url",
+    "Camping/Unconfirmed 963437.crdownload",
+    "Camping/Willow-River_Bike-Trails-Map.pdf_files/viewer.css",
+    "Camping/Willow-River_Bike-Trails-Map.pdf_files/pdf-pdfjs2.css",
+    "House Projects/Pasted Image 20220822102208_611.png",
+    "House Projects/Foundation Insulation measurements.png",
+    "Excalidraw/Bananas.svg",
+    "Excalidraw/Pasted Image 20230312212453_127.png",
+    "Excalidraw/Pasted Image 20230306070257_960.png",
+    "Journal/MetroidPrime/magmoor-caverns-map.png"
+  ]
+}
