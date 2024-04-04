@@ -208,7 +208,7 @@ Has made sacrifices -- wants to know what it does
 - find room with fish monster. We fight
 ## Titus doesn't die
 - Hear a voice: smallest light can be seen for miles
-- But Irus does. Titus cast's Revivify
+- But Ivra does. Titus cast's Revivify
 - Titus can only breathe water. Salve seems to heal
 ## Domed room
 - circular metal Door with 9 keys of different sizes. 
@@ -287,7 +287,7 @@ Question
 ## Final Question
 - How to release creature?
 	- We all decide to release the creature. 
-	- Irus rolls 17 opener
+	- Ivra rolls 17 opener
 	- Osym + Yord = 40
 	- Titus = 22
 	- Lose 1 attribute
@@ -403,7 +403,7 @@ Ivra, Ferro - Sewers
 
 
 ## Day After Heist
-### Selling some item
+### Selling some item 
 Sold enchanted horseshoes and  Swan token (boat).
 Bought Dispel Magic,  Fly, Dream, Mord. Sanctum. 
 

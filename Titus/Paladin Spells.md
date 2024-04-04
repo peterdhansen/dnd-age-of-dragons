@@ -1,54 +1,55 @@
 - [L] prepare new spells
 ## Prepared
 
-| Pr  | Spell Name                         | Level | Type | Time  | Range    | Duration       | VSM            |
-| --- | ---------------------------------- | ----- | ---- | ----- | -------- | -------------- | -------------- |
-| 0   | [[#Heroism]]                       | 1     | Enc  | 1A    | Touch    | C - 1 minute   | VS             |
-| 0   | [[#Guiding Bolt]]                  | 1     | Evo  | 1A    | 120 feet | 1 round        | VS             |
-| 1   | [[#Command]]                       | 1     | Enc  | 1A    | 60 feet  | 1 round        | V              |
-| 1   | [[#Bless]]                         | 1     | Enc  | 1A    | 30 feet  | C - 1 minute   | VSM            |
-| 1   | [[#Protection from Evil and Good]] | 1     | Abj  | 1A    | touch    | C - 10 minutes | VSM            |
-| 0   | [[#Enhance Ability]]               | 2     | Tra  | 1A    | Touch    | C - 1 hour     | VSM            |
-| 0   | [[#Magic Weapon]]                  | 2     | Tra  | 1BA   | Touch    | C - 1 hour     | VS             |
-| 1   | [[#Find Steed]]                    | 2     | Con  | 10min | 30 feet  | Inst           | VS             |
-| 1   | [[#Aid]]                           | 2     | Abj  | 1A    | 30 feet  | 8 hours        | VSM            |
-| 1   | [[#Branding Smite]]                | 2     | Evo  | 1BA   | self     | C - 1 minute   | V              |
-| 0   | [[#Haste]]                         | 3     | Tra  | 1A    | 30 feet  | C - 1 minute   | VSM            |
-| 0   | [[#Protection from Energy]]        | 3     | Abj  | 1A    | touch    | C - 1 hour     | VS             |
-| 1   | [[#Revivify]]                      | 3     | Nec  | 1A    | Self     | 1 hour         | VSM(-300 gold) |
-| 7   | Total                              |       |      |       |          |                |                |
+| Pr  | Spell Name                         | Level | Type | Time | Range    | Duration       | VSM            |
+| --- | ---------------------------------- | ----- | ---- | ---- | -------- | -------------- | -------------- |
+| 0   | [[#Heroism]]                       | 1     | Enc  | 1A   | Touch    | C - 1 minute   | VS             |
+| 0   | [[#Guiding Bolt]]                  | 1     | Evo  | 1A   | 120 feet | 1 round        | VS             |
+| 1   | [[#Command]]                       | 1     | Enc  | 1A   | 60 feet  | 1 round        | V              |
+| 1   | [[#Bless]]                         | 1     | Enc  | 1A   | 30 feet  | C - 1 minute   | VSM            |
+| 1   | [[#Protection from Evil and Good]] | 1     | Abj  | 1A   | touch    | C - 10 minutes | VSM            |
+| 1   | [[#Wrathful Smite]]                | 1     | Evo  | 1BA  | self     | C - 1 minute   | V              |
+| 0   | [[#Enhance Ability]]               | 2     | Tra  | 1A   | Touch    | C - 1 hour     | VSM            |
+| 0   | [[#Magic Weapon]]                  | 2     | Tra  | 1BA  | Touch    | C - 1 hour     | VS             |
+| 1   | [[#Aid]]                           | 2     | Abj  | 1A   | 30 feet  | 8 hours        | VSM            |
+| 1   | [[#Branding Smite]]                | 2     | Evo  | 1BA  | self     | C - 1 minute   | V              |
+| 0   | [[#Haste]]                         | 3     | Tra  | 1A   | 30 feet  | C - 1 minute   | VSM            |
+| 0   | [[#Protection from Energy]]        | 3     | Abj  | 1A   | touch    | C - 1 hour     | VS             |
+| 1   | [[#Revivify]]                      | 3     | Nec  | 1A   | Self     | 1 hour         | VSM(-300 gold) |
+| 7   | Total                              |       |      |      |          |                |                |
 <!-- TBLFM: @>$1=sum(@I..@-1) -->
 
 ## Unprepared
 
-| Pr  | Spell Name                         | Level | Type | Time  | Range   | Duration       | VSM         |
-| --- | ---------------------------------- | ----- | ---- | ----- | ------- | -------------- | ----------- |
-| 1   | [[#Searing Smite]]                 | 1     | Evo  | 1BA   | self    | C - 1 minute   | V           |
-| 1   | [[#Ceremony]]                      | 1     | Abj  | 1hr   | touch   | Inst           | VSM(-25gp)  |
-| 1   | [[#Compelled Duel]]                | 1     | Enc  | 1BA   | 30 feet | C - 1 minute   | V           |
-| 1   | [[#Cure Wounds]]                   | 1     | Evo  | 1A    | touch   | Inst           | VS          |
-| 1   | [[#Detect Evil and Good]]          | 1     | Div  | 1A    | self    | C - 10 minutes | VS          |
-| 1   | [[#Detect Magic]]                  | 1     | Div  | 1A    | self    | C - 10 minutes | VS          |
-| 1   | [[#Detect Poison and Disease]]     | 1     | Div  | 1A    | self    | C - 10 minutes | VSM         |
-| 1   | [[#Divine Favor]]                  | 1     | Evo  | 1BA   | self    | C - 1 minute   | VS          |
-| 1   | [[#Purify Food and Drink]]         | 1     | Tra  | 1A    | 10 feet | Inst           | VS          |
-| 1   | [[#Shield of Faith]]               | 1     | Abj  | 1BA   | 60 feet | C - 10 minutes | VSM         |
-| 1   | [[#Thunderous Smite]]              | 1     | Evo  | 1BA   | self    | C - 1 minute   | V           |
-| 1   | [[#Wrathful Smite]]                | 1     | Evo  | 1BA   | self    | C - 1 minute   | V           |
-| 1   | [[#Lesser Restoration]]            | 2     | Abj  | 1A    | touch   | Inst           | VS          |
-| 1   | [[#Locate Object]]                 | 2     | Div  | 1A    | self    | C - 10 minutes | VSM         |
-| 1   | [[#Protection from Poison]]        | 2     | Abj  | 1A    | touch   | 1 hour         | VS          |
-| 1   | [[#Zone of Truth]]                 | 2     | Enc  | 1A    | 60 feet | 10 minutes     | VS          |
-| 1   | [[#Aura of Vitality]]              | 3     | Evo  | 1A    | 30 feet | C - 1 minute   | V           |
-| 1   | [[#Blinding Smite]]                | 3     | Evo  | 1BA   | self    | C - 1 minute   | V           |
-| 1   | [[#Create Food and Water]]         | 3     | Con  | 1A    | 30 feet | Inst           | VS          |
-| 1   | [[#Crusader's Mantle]]             | 3     | Evo  | 1A    | 30 feet | C - 1 minute   | V           |
-| 1   | [[#Daylight]]                      | 3     | Evo  | 1A    | 60 feet | 1 hour         | VS          |
-| 1   | [[#Elemental Weapon]]              | 3     | Tra  | 1A    | touch   | C - 1 hour     | VS          |
-| 1   | [[#Magic Circle]]                  | 3     | Abj  | 1min  | 10 feet | 1 hour         | VSM(-100gp) |
-| 1   | [[#Remove Curse]]                  | 3     | Abj  | 1A    | touch   | Inst           | VS          |
-| 1   | [[#Spirit Shroud]]                 | 3     | Nec  | 1BA   | Self    | 1 hour         | VS          |
-| 26  | Total                              |       |      |       |         |                |             |
+| Pr  | Spell Name                     | Level | Type | Time  | Range   | Duration       | VSM         |
+| --- | ------------------------------ | ----- | ---- | ----- | ------- | -------------- | ----------- |
+| 1   | [[#Searing Smite]]             | 1     | Evo  | 1BA   | self    | C - 1 minute   | V           |
+| 1   | [[#Ceremony]]                  | 1     | Abj  | 1hr   | touch   | Inst           | VSM(-25gp)  |
+| 1   | [[#Compelled Duel]]            | 1     | Enc  | 1BA   | 30 feet | C - 1 minute   | V           |
+| 1   | [[#Wrathful Smite]]            | 1     | Evo  | 1BA   | self    | C - 1 minute   | V           |
+| 1   | [[#Cure Wounds]]               | 1     | Evo  | 1A    | touch   | Inst           | VS          |
+| 1   | [[#Detect Evil and Good]]      | 1     | Div  | 1A    | self    | C - 10 minutes | VS          |
+| 1   | [[#Detect Magic]]              | 1     | Div  | 1A    | self    | C - 10 minutes | VS          |
+| 1   | [[#Detect Poison and Disease]] | 1     | Div  | 1A    | self    | C - 10 minutes | VSM         |
+| 1   | [[#Divine Favor]]              | 1     | Evo  | 1BA   | self    | C - 1 minute   | VS          |
+| 1   | [[#Purify Food and Drink]]     | 1     | Tra  | 1A    | 10 feet | Inst           | VS          |
+| 1   | [[#Shield of Faith]]           | 1     | Abj  | 1BA   | 60 feet | C - 10 minutes | VSM         |
+| 1   | [[#Thunderous Smite]]          | 1     | Evo  | 1BA   | self    | C - 1 minute   | V           |
+| 1   | [[#Lesser Restoration]]        | 2     | Abj  | 1A    | touch   | Inst           | VS          |
+| 1   | [[#Locate Object]]             | 2     | Div  | 1A    | self    | C - 10 minutes | VSM         |
+| 1   | [[#Protection from Poison]]    | 2     | Abj  | 1A    | touch   | 1 hour         | VS          |
+| 1   | [[#Find Steed]]                | 2     | Con  | 10min | 30 feet | Inst           | VS          |
+| 1   | [[#Zone of Truth]]             | 2     | Enc  | 1A    | 60 feet | 10 minutes     | VS          |
+| 1   | [[#Aura of Vitality]]          | 3     | Evo  | 1A    | 30 feet | C - 1 minute   | V           |
+| 1   | [[#Blinding Smite]]            | 3     | Evo  | 1BA   | self    | C - 1 minute   | V           |
+| 1   | [[#Create Food and Water]]     | 3     | Con  | 1A    | 30 feet | Inst           | VS          |
+| 1   | [[#Crusader's Mantle]]         | 3     | Evo  | 1A    | 30 feet | C - 1 minute   | V           |
+| 1   | [[#Daylight]]                  | 3     | Evo  | 1A    | 60 feet | 1 hour         | VS          |
+| 1   | [[#Elemental Weapon]]          | 3     | Tra  | 1A    | touch   | C - 1 hour     | VS          |
+| 1   | [[#Magic Circle]]              | 3     | Abj  | 1min  | 10 feet | 1 hour         | VSM(-100gp) |
+| 1   | [[#Remove Curse]]              | 3     | Abj  | 1A    | touch   | Inst           | VS          |
+| 1   | [[#Spirit Shroud]]             | 3     | Nec  | 1BA   | Self    | 1 hour         | VS          |
+| 26  | Total                          |       |      |       |         |                |             |
 <!-- TBLFM: @>$1=sum(@I..@-1) -->
 
 ## Level 4/5
