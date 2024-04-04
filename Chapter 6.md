@@ -154,7 +154,7 @@ Elder Dragon
 - Nodes of elemental energy (another source of primordial energy).
 ## Blackwall
 Has made sacrifices -- wants to know what it does
-[[DND/Mantle of Wrath]]
+[[Mantle of Wrath]]
 - Looking for travel to Paravore
 	- Teleport - Unseen University, Sisters of the Moon Temple
 

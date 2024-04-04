@@ -4,7 +4,7 @@
 Proficiency: +4
 
 Deaths / Saves: 0/0
-[[DND/voice]]
+[[voice]]
 [[Attributes]]
 ### Actions
 - Attack ([[#^f11810|Move 5ft]])

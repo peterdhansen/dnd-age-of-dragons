@@ -1,5 +1,5 @@
 ```tasks
-(path includes DND/Chapter)
+(path includes Chapter)
 not done
 hide edit button
 short mode

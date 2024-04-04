@@ -1,4 +1,4 @@
-- [[DND/Titus/Character|Character]]
+- [[Titus/Character|Character]]
 ## Notes
 - [[Chapter 1]]
 - [[Chapter 2-3]]

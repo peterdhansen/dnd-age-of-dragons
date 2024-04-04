@@ -6,7 +6,7 @@ cssclass: dnd
 HP: 18/43 + 0THP
 Hit Dice: 7/7 d8 + 1
 
-![[DND/Haldir/Attributes]]
+![[Haldir/Attributes|Attributes]]
 ## Spell Slots
 1. Level 1
 	- [ ] 1

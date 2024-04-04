@@ -1,6 +1,6 @@
 ```tasks
 status.name includes Rest
-(path includes DND/Titus) OR (path includes DND/Items)
+(path includes Titus) OR (path includes Items)
 hide edit button
 short mode
 group by status.name
