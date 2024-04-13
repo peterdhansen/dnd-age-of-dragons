@@ -9,7 +9,7 @@ Ivra tried to stop them. In the end, found only remaining child, Arabella, and a
 
 ### First Scrying with Ahvost
 - Sees Ara during a fight where she blasts out of a wave of energy. Seems trapped
-### Second Scrying with Osym
+### Second Scrying with Osim
 - Housed in a flat cement square room
 - Really beat down, rough looking
-- End of spell she awakes and looks strait at the sensor/Osym
+- End of spell she awakes and looks strait at the sensor/Osim

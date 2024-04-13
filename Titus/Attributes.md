@@ -1,34 +1,34 @@
 ## Attributes
 ### Strength +4 (18)
-- +8 **Save** (+4+2(aura) +2(staff))
+- +9 **Save** (+4+3(aura) +2(staff))
 - !+8 Athletics
 ### Dexterity +0 (10)
-- +4 **Save** (+2 aura +2 staff) (+2 targeted, reaction - save for 0 instead of half)
+- +5 **Save** (+3 aura +2 staff) (+2 targeted, reaction - save for 0 instead of half)
 - +0 Acrobatics
 - +0 Slight of Hand
 - +0 Stealth (disadv)
 ### Constitution +2 (14)
-- +6  **Save** (+2 +2 aura + 2 staff)
+- +7  **Save** (+2 +3 aura + 2 staff)
 ### Intelligence +1 (12)
-- +3 **Save** (+1 +2 aura + 2 staff)
+- +6 **Save** (+1 +3 aura + 2 staff)
 - +1 Arcana
 - +1 History
 - +1 Investigation
 - +1 Nature
 - !+5 Religion
 ### Wisdom +4 (19) (without ring, +0, 11)
-- !+12 **Save** (+4 + 4 prof +2 aura +2 staff)
+- !+13 **Save** (+4 + 4 prof +3 aura +2 staff)
 - +4 Animal Handling
 - !+8 Insight
 - +4 Medicine
 - +4 Perception
 - +4 Survival
-### Charisma +2 (14)
-- !+10 **Save** (+2 + 4 prof + 2 aura + 2 staff)
-- +2 Deception
-- !+6 Intimidation
-- +2 Performance
-- !+6 Persuasion
+### Charisma +3 (16)
+- !+12 **Save** (+3 + 4 prof + 3 aura + 2 staff)
+- +3 Deception
+- !+7 Intimidation
+- +3 Performance
+- !+7 Persuasion
 
 ## Stats
 ### Attacks

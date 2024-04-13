@@ -1,6 +1,6 @@
 # Points of Interest
 ## Items
-- magic disk of concentric rings - Osym
+- magic disk of concentric rings - Osim
 - Egg from Outpost cabin - For storing glyphs
 - Scarlet shard of quartz from Dragon Outpost  [[Crystal shards]]
 - Clawntlets 

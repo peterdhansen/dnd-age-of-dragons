@@ -2,7 +2,7 @@
 - Yord sees person at end of tunnel before explosion in a vision
 	- Larger memory of brother exploding when fighting off Orcs
 	 - Yord lost twin brother in explosion
-- Osym sees vision of crystal fox in elvish clearing
+- Osim sees vision of crystal fox in elvish clearing
 - Illusion of First Reader dying
 - Penny reacted in some way to desk explosion
 - Ivra - Daughter [[Arabella]] has emotional magic. She ran away and now controlled by Dragon. 

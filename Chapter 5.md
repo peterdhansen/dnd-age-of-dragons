@@ -47,17 +47,19 @@ Elemental Nodes:
 
 Scry on Red Wizard
 - With [[Lady Aerisi|Winged Air Genasi]] 
-- Partially scaled Woman
+- Partially scaled Woman - Tallis
 - Resmir at Paravor
 	- Marshes of Chulibrum
 - looking for the "Mantle" 
 - Battalion of Resmir will be late
+- Tallis was wanting to become a wormspeaker
+- 
 
 Ivra scries on his daughter.
 - She is being tested beyond her limits
 
 Elturel is sending force to Candlekeep and preparing for war
-- Order of the Silver Hand that are willing to help. Agents in Neverwinter.
+- Order of the Silver Gauntlet that are willing to help. Agents in Neverwinter.
 
 2nd Scry of Hideout
 - [[Lady Aerisi]] is leaving for the north

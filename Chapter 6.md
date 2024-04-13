@@ -188,7 +188,7 @@ Has made sacrifices -- wants to know what it does
 - Elemental beams come out of soldiers
 - After retreating and determining the membrane holds back lots of steam, we break down the door on the opposite side of the room and continue
 - hallway spirals downwards, more decorated 
-- Reminds Osym of Mythdrannor
+- Reminds Osim of Mythdrannor
 - Yord recognizes specific symbol (alchemist element of disease)
 - 3 alchemist fire elements attack (wreathed in water?)
 ### Short rest
@@ -232,9 +232,9 @@ Has made sacrifices -- wants to know what it does
 
 Question
 1. Yord
-2. Osym
+2. Osim
 3. Ara - 
-4. Osym - tiamat has not come yet
+4. Osim - tiamat has not come yet
 5. Best path for us to find the warhammer
 	- quickest way is to dive into the lake itself
 6. Where do we find the artifact that Resmir seeks before she does?
@@ -253,7 +253,7 @@ Question
 	- 2 500 GP Gems
 	- 3 500 GP Black Pearls
  2. 5 Scrolls
-	- 9th level - Osym
+	- 9th level - Osim
 	- Mislead
 	- Lightning Arrow
 	- Awaken?
@@ -288,12 +288,12 @@ Question
 - How to release creature?
 	- We all decide to release the creature. 
 	- Ivra rolls 17 opener
-	- Osym + Yord = 40
+	- Osim + Yord = 40
 	- Titus = 22
 	- Lose 1 attribute
 ## Diving down
 Fought the Aboleth
-Osym and Yord have sticky substance on skin
+Osim and Yord have sticky substance on skin
 	- Tried to cure with salve and Lay on hands. 
 
 Going down wide spiral staircase around deep empty area. 
@@ -334,10 +334,10 @@ lord blackwall
 - Titus shaves his head. 
 - Titus tells the group about how he became a paladin
 - The final energy fades from the haft of the hammer, and it breaks when used as a weapon.
-- Osym casts Divination and looks bad to give hammer to [[#^32bb6e|Cottenmoore]]
+- Osim casts Divination and looks bad to give hammer to [[#^32bb6e|Cottenmoore]]
 ## Zhentarim Heist
-- Osym bought lead line box and remove curse scroll.
-- Osym discoveres dimension door [[Tattoo]]
+- Osim bought lead line box and remove curse scroll.
+- Osim discoveres dimension door [[Tattoo]]
 - Ferro tracks a merchant (other spies tracking him)
 - Ferro sees merchant talk to other shady characters
 - Red wizard comes in knocks out and takes Ferro
@@ -356,7 +356,7 @@ Periphery People
 - 312
 
 ### Preparation Day
-Osym - Works on analyzing Wizard Spell book from Candlekeep
+Osim - Works on analyzing Wizard Spell book from Candlekeep
 	- Pay 50 GP - Dispel "magic lock"
 	- Spell book acts like "Bag of Holding" - only can ask for spells. 
 	- Even accessing the spell causes some abjurative effect. Need to know the color.
@@ -413,7 +413,7 @@ He set us up to attack periphery to test the Accountant.
 Offers to collaborate on defense. 
 
 ### Scry Zakhar
-looking at books.
+looking at books. in a simple unadorned stone room
 Jewel separated from a necklace. 
 Jewel is "her" new vessel as the new age dawns.
 
@@ -431,6 +431,6 @@ If you don't accept death, her beast takes it.
 Asked accountant to help out with finding Zakhar. 
 
 ### Night
-Osym reads book for 4 hours
+Osim reads book for 4 hours
 ## Day of the Aloran Concord meeting
 

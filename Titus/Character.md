@@ -1,8 +1,9 @@
 # Titus Yorenson
-- [L] HP: 75/75 + 0THP
-- [L] Hit Die: 11/11 d10 + 2
-Proficiency: +4
+- [L] HP: 83/83 + 0THP
+- [L] Hit Die: 12/12 d10 + 2
 
+Proficiency: +4
+[[Titus/images]]
 Deaths / Saves: 0/0
 [[voice]]
 [[Attributes]]
@@ -25,16 +26,16 @@ Deaths / Saves: 0/0
 
 ## [[Paladin Spells]]
 ## Spell Slots
-- [r] 1 - Spell slot
+- [L] 1 - Spell slot
 - [L] 1 - Spell slot
 - [L] 1 - Spell slot
 - [L] 1 - Spell slot
 - [L] 2 - Spell slot
-- [r] 2 - Spell slot
+- [L] 2 - Spell slot
 - [L] 2 - Spell slot
 - [L] 3 - Spell slot
 - [L] 3 - Spell slot
-- [L] 3 - Spell slot
+- [r] 3 - Spell slot
 	
 
 ## Features
@@ -43,7 +44,8 @@ Deaths / Saves: 0/0
 	- [L] Divine sense
 	- [L] Divine Sense
 	- [L] Divine Sense
-- [L] Lay on Hands:  55/55 ^c2e3c6
+	- [L] Divine Sense
+- [L] Lay on Hands:  60/60 ^c2e3c6
 	- expend 5 points to cure disease or neutralize poison
 - Divine Smite ^9fc870
 	- 1 -> 2d8, undead 3d8
@@ -62,7 +64,7 @@ Deaths / Saves: 0/0
 		- advantage on Athletics and Acrobatics
 		- Carry/push/drag/lift twice as much.
 		- Long/high jump increases by 10ft
-	- **Inspiring Smite**. Bonus Action - After [[#^9fc870|Divine Smite]], grant 2d8+11 (level) THP distributed within 30ft.  ^4b7e75
+	- **Inspiring Smite**. Bonus Action - After [[#^9fc870|Divine Smite]], grant 2d8+12 (level) THP distributed within 30ft.  ^4b7e75
 - Aura of Alacrity
 	- Walking Speed +10 ft (5ft aura)
 ### Feats
@@ -106,7 +108,7 @@ When we do good to each other, it brings the Light into the world.
 
 | SP  | GP  | PP  | Total |
 | --- | --- | --- | ----- |
-| 250 | 6  | 24  | 271   |
+| 200 | 6   | 12  | 146   |
 <!-- TBLFM: @2$4=(((@2$1*0.1) + @2$2)+ (@2$3*10)) -->
 
 
@@ -158,7 +160,7 @@ When we do good to each other, it brings the Light into the world.
 ***Hooves.*** *Melee Weapon Attack:* +6 to hit, reach 5 ft., one target. *Hit:* 11 (2d6 + 4) bludgeoning damage.
 
 ## HP Rolls
-- **10**+8+5+8+6+1+3+6+2+2+2= 53
+- **10**+8+5+8+6+1+3+6+2+2+2+6= 53
 
-- 11 (level) x 2 (CON) = 22
-- Total 75
+- 12 (level) x 2 (CON) = 22
+- Total 83

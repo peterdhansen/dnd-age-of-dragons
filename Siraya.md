@@ -25,6 +25,6 @@ Prof + 3, History/Nature
 Healer  d6+9
 - [x] Titus
 - [x] Yord
-- [x] Osym
+- [x] Osim
 - [x] Ivra
 - [x] Ahvost

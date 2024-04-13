@@ -82,7 +82,7 @@
   "library2": {
     "type": "excalidrawlib",
     "version": 2,
-    "source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/1.9.17",
+    "source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.1.1",
     "libraryItems": [
       {
         "status": "published",
@@ -189,8 +189,7 @@
             "verticalAlign": "top",
             "containerId": null,
             "originalText": "DC15",
-            "lineHeight": 1.2581759278159768,
-            "baseline": 21
+            "lineHeight": 1.2581759278159768
           },
           {
             "type": "text",
@@ -228,8 +227,7 @@
             "verticalAlign": "top",
             "containerId": null,
             "originalText": "Performence",
-            "lineHeight": 1.3125,
-            "baseline": 14
+            "lineHeight": 1.3125
           }
         ],
         "id": "F4yZJAieY-ZCWr3a1jhMh",
@@ -305,8 +303,7 @@
             "verticalAlign": "middle",
             "containerId": "cFnDOKKN_Mu9S_XROasm0",
             "originalText": "Sidetrack",
-            "lineHeight": 1.15,
-            "baseline": 18
+            "lineHeight": 1.15
           }
         ],
         "id": "iDfrIEMuNwsFU5JlJChZ3",
@@ -382,8 +379,7 @@
             "verticalAlign": "middle",
             "containerId": "m8fkrqZCETQ1rSZ4iXZ3N",
             "originalText": "PC oriented story part",
-            "lineHeight": 1.15,
-            "baseline": 18
+            "lineHeight": 1.15
           }
         ],
         "id": "u4oPIaLy6Hh9DkKLq1Hr4",
@@ -459,8 +455,7 @@
             "verticalAlign": "middle",
             "containerId": "37M5y2jxHjhbYt-uUIbeP",
             "originalText": "Hidden info",
-            "lineHeight": 1.1875,
-            "baseline": 14
+            "lineHeight": 1.1875
           }
         ],
         "id": "dNgJY0LAFG2Ct-2Bh2NoH",
@@ -536,8 +531,7 @@
             "verticalAlign": "middle",
             "containerId": "sVC40AjNu21WPXEbmqpyy",
             "originalText": "Plot point",
-            "lineHeight": 1.15,
-            "baseline": 18
+            "lineHeight": 1.15
           }
         ],
         "id": "KKQvxYkFi4j9w9GPJj2d7",
@@ -613,8 +607,7 @@
             "verticalAlign": "middle",
             "containerId": "WyY3RdsshAyetTI-KEJjq",
             "originalText": "flavor info if they ask for it",
-            "lineHeight": 1.3125,
-            "baseline": 35
+            "lineHeight": 1.3125
           }
         ],
         "id": "lT_ER3gonohxPBupH_hA7",
@@ -690,8 +683,7 @@
             "verticalAlign": "middle",
             "containerId": "CbtndnTTaDOVIwQb2SBnJ",
             "originalText": "Found items & Lore",
-            "lineHeight": 1.3125,
-            "baseline": 14
+            "lineHeight": 1.3125
           }
         ],
         "id": "uGhSeufKKeIePql61j0VE",
@@ -803,8 +795,7 @@
             "verticalAlign": "top",
             "containerId": null,
             "originalText": "DC17",
-            "lineHeight": 1.3042480911557408,
-            "baseline": 20
+            "lineHeight": 1.3042480911557408
           },
           {
             "type": "text",
@@ -843,8 +834,7 @@
             "verticalAlign": "top",
             "containerId": null,
             "originalText": "EVENT",
-            "lineHeight": 1.3125,
-            "baseline": 14
+            "lineHeight": 1.3125
           }
         ],
         "id": "g7pryaHQuVhIY7l9aYLDq",
@@ -956,8 +946,7 @@
             "verticalAlign": "top",
             "containerId": null,
             "originalText": "DC15",
-            "lineHeight": 1.2581759278159768,
-            "baseline": 21
+            "lineHeight": 1.2581759278159768
           },
           {
             "type": "text",
@@ -995,8 +984,7 @@
             "verticalAlign": "top",
             "containerId": null,
             "originalText": "Persuasion",
-            "lineHeight": 1.3125,
-            "baseline": 14
+            "lineHeight": 1.3125
           }
         ],
         "id": "eMRMQBoZx4GNc1aFe2tTk",
@@ -1108,8 +1096,7 @@
             "verticalAlign": "top",
             "containerId": null,
             "originalText": "DC15",
-            "lineHeight": 1.2581759278159768,
-            "baseline": 21
+            "lineHeight": 1.2581759278159768
           },
           {
             "type": "text",
@@ -1147,8 +1134,7 @@
             "verticalAlign": "top",
             "containerId": null,
             "originalText": "Intimidation",
-            "lineHeight": 1.3125,
-            "baseline": 14
+            "lineHeight": 1.3125
           }
         ],
         "id": "j7wfxr_cxKzSsR9Ey1Awt",
@@ -1260,8 +1246,7 @@
             "verticalAlign": "top",
             "containerId": null,
             "originalText": "DC15",
-            "lineHeight": 1.2581759278159768,
-            "baseline": 21
+            "lineHeight": 1.2581759278159768
           },
           {
             "type": "text",
@@ -1299,8 +1284,7 @@
             "verticalAlign": "top",
             "containerId": null,
             "originalText": "Deception",
-            "lineHeight": 1.3125,
-            "baseline": 14
+            "lineHeight": 1.3125
           }
         ],
         "id": "247seHyPsFemC6IJq2vX6",
@@ -1412,8 +1396,7 @@
             "verticalAlign": "top",
             "containerId": null,
             "originalText": "DC15",
-            "lineHeight": 1.2581759278159768,
-            "baseline": 21
+            "lineHeight": 1.2581759278159768
           },
           {
             "type": "text",
@@ -1451,8 +1434,7 @@
             "verticalAlign": "top",
             "containerId": null,
             "originalText": "CHA.",
-            "lineHeight": 1.3125,
-            "baseline": 14
+            "lineHeight": 1.3125
           }
         ],
         "id": "wro_PmcEbbPyRk618v_NM",
@@ -1564,8 +1546,7 @@
             "verticalAlign": "top",
             "containerId": null,
             "originalText": "DC15",
-            "lineHeight": 1.2581759278159768,
-            "baseline": 21
+            "lineHeight": 1.2581759278159768
           },
           {
             "type": "text",
@@ -1603,8 +1584,7 @@
             "verticalAlign": "top",
             "containerId": null,
             "originalText": "CHA. ST!",
-            "lineHeight": 1.3125,
-            "baseline": 14
+            "lineHeight": 1.3125
           }
         ],
         "id": "aQi7ONxycJPQVfVG7_Gg3",
@@ -1716,8 +1696,7 @@
             "verticalAlign": "top",
             "containerId": null,
             "originalText": "DC15",
-            "lineHeight": 1.2581759278159768,
-            "baseline": 21
+            "lineHeight": 1.2581759278159768
           },
           {
             "type": "text",
@@ -1755,8 +1734,7 @@
             "verticalAlign": "top",
             "containerId": null,
             "originalText": "Stealth",
-            "lineHeight": 1.3125,
-            "baseline": 14
+            "lineHeight": 1.3125
           }
         ],
         "id": "hk_LFahjGNSM3CIMGw4v2",
@@ -1868,8 +1846,7 @@
             "verticalAlign": "top",
             "containerId": null,
             "originalText": "DC15",
-            "lineHeight": 1.2581759278159768,
-            "baseline": 21
+            "lineHeight": 1.2581759278159768
           },
           {
             "type": "text",
@@ -1907,8 +1884,7 @@
             "verticalAlign": "top",
             "containerId": null,
             "originalText": "Slight of hand",
-            "lineHeight": 1.3125,
-            "baseline": 14
+            "lineHeight": 1.3125
           }
         ],
         "id": "qYCH0mvZWbfz0tx_x1Wiv",
@@ -2020,8 +1996,7 @@
             "verticalAlign": "top",
             "containerId": null,
             "originalText": "DC15",
-            "lineHeight": 1.2581759278159768,
-            "baseline": 21
+            "lineHeight": 1.2581759278159768
           },
           {
             "type": "text",
@@ -2059,8 +2034,7 @@
             "verticalAlign": "top",
             "containerId": null,
             "originalText": "Acrobatics",
-            "lineHeight": 1.3125,
-            "baseline": 14
+            "lineHeight": 1.3125
           }
         ],
         "id": "ila0vOTFamFAU6MXM3Oy3",
@@ -2172,8 +2146,7 @@
             "verticalAlign": "top",
             "containerId": null,
             "originalText": "DC15",
-            "lineHeight": 1.2581759278159768,
-            "baseline": 21
+            "lineHeight": 1.2581759278159768
           },
           {
             "type": "text",
@@ -2211,8 +2184,7 @@
             "verticalAlign": "top",
             "containerId": null,
             "originalText": "DEX.",
-            "lineHeight": 1.3125,
-            "baseline": 14
+            "lineHeight": 1.3125
           }
         ],
         "id": "_2yEv_mF-IIWJnglDgvSE",
@@ -2324,8 +2296,7 @@
             "verticalAlign": "top",
             "containerId": null,
             "originalText": "DC15",
-            "lineHeight": 1.2581759278159768,
-            "baseline": 21
+            "lineHeight": 1.2581759278159768
           },
           {
             "type": "text",
@@ -2363,8 +2334,7 @@
             "verticalAlign": "top",
             "containerId": null,
             "originalText": "DEX. ST!",
-            "lineHeight": 1.3125,
-            "baseline": 14
+            "lineHeight": 1.3125
           }
         ],
         "id": "kU8y-cVM8-aMHxL7Vbwns",
@@ -2478,8 +2448,7 @@
             "verticalAlign": "top",
             "containerId": null,
             "originalText": "DC15",
-            "lineHeight": 1.2581759278159768,
-            "baseline": 21
+            "lineHeight": 1.2581759278159768
           },
           {
             "type": "text",
@@ -2518,8 +2487,7 @@
             "verticalAlign": "top",
             "containerId": null,
             "originalText": "Concentration",
-            "lineHeight": 1.3125,
-            "baseline": 14
+            "lineHeight": 1.3125
           }
         ],
         "id": "O4R2FiygWlir2RHwec3Ck",
@@ -2633,8 +2601,7 @@
             "verticalAlign": "top",
             "containerId": null,
             "originalText": "DC15",
-            "lineHeight": 1.2581759278159768,
-            "baseline": 21
+            "lineHeight": 1.2581759278159768
           },
           {
             "type": "text",
@@ -2673,8 +2640,7 @@
             "verticalAlign": "top",
             "containerId": null,
             "originalText": "CON.",
-            "lineHeight": 1.3125,
-            "baseline": 14
+            "lineHeight": 1.3125
           }
         ],
         "id": "lAmOf2i8e864VZr_SxUzi",
@@ -2788,8 +2754,7 @@
             "verticalAlign": "top",
             "containerId": null,
             "originalText": "DC15",
-            "lineHeight": 1.2581759278159768,
-            "baseline": 21
+            "lineHeight": 1.2581759278159768
           },
           {
             "type": "text",
@@ -2828,8 +2793,7 @@
             "verticalAlign": "top",
             "containerId": null,
             "originalText": "CON. ST!",
-            "lineHeight": 1.3125,
-            "baseline": 14
+            "lineHeight": 1.3125
           }
         ],
         "id": "vM0B0qgjgr6AqGueQtV8d",
@@ -2941,8 +2905,7 @@
             "verticalAlign": "top",
             "containerId": null,
             "originalText": "DC10",
-            "lineHeight": 1.2581759278159768,
-            "baseline": 21
+            "lineHeight": 1.2581759278159768
           },
           {
             "type": "text",
@@ -2980,8 +2943,7 @@
             "verticalAlign": "top",
             "containerId": null,
             "originalText": "Religion\n",
-            "lineHeight": 1.3125,
-            "baseline": 22
+            "lineHeight": 1.3125
           }
         ],
         "id": "qjFE1p4U6FcvbARrqG1I3",
@@ -3093,8 +3055,7 @@
             "verticalAlign": "top",
             "containerId": null,
             "originalText": "DC10",
-            "lineHeight": 1.2581759278159768,
-            "baseline": 21
+            "lineHeight": 1.2581759278159768
           },
           {
             "type": "text",
@@ -3132,8 +3093,7 @@
             "verticalAlign": "top",
             "containerId": null,
             "originalText": "Nature",
-            "lineHeight": 1.3125,
-            "baseline": 14
+            "lineHeight": 1.3125
           }
         ],
         "id": "k0aaOUhU1fg6FjceeS7j4",
@@ -3245,8 +3205,7 @@
             "verticalAlign": "top",
             "containerId": null,
             "originalText": "DC10",
-            "lineHeight": 1.2581759278159768,
-            "baseline": 21
+            "lineHeight": 1.2581759278159768
           },
           {
             "type": "text",
@@ -3284,8 +3243,7 @@
             "verticalAlign": "top",
             "containerId": null,
             "originalText": "History",
-            "lineHeight": 1.3125,
-            "baseline": 14
+            "lineHeight": 1.3125
           }
         ],
         "id": "s8TjSVK0qsqRRm-l1s5M1",
@@ -3397,8 +3355,7 @@
             "verticalAlign": "top",
             "containerId": null,
             "originalText": "DC10",
-            "lineHeight": 1.2581759278159768,
-            "baseline": 21
+            "lineHeight": 1.2581759278159768
           },
           {
             "type": "text",
@@ -3436,8 +3393,7 @@
             "verticalAlign": "top",
             "containerId": null,
             "originalText": "Arcana",
-            "lineHeight": 1.3125,
-            "baseline": 14
+            "lineHeight": 1.3125
           }
         ],
         "id": "Qhk8GoJzkEelnrtbvyTzZ",
@@ -3549,8 +3505,7 @@
             "verticalAlign": "top",
             "containerId": null,
             "originalText": "DC10",
-            "lineHeight": 1.2581759278159768,
-            "baseline": 21
+            "lineHeight": 1.2581759278159768
           },
           {
             "type": "text",
@@ -3588,8 +3543,7 @@
             "verticalAlign": "top",
             "containerId": null,
             "originalText": "Investigation",
-            "lineHeight": 1.3125,
-            "baseline": 14
+            "lineHeight": 1.3125
           }
         ],
         "id": "NqlNj_YU5n7dpKs8xrJQE",
@@ -3701,8 +3655,7 @@
             "verticalAlign": "top",
             "containerId": null,
             "originalText": "DC10",
-            "lineHeight": 1.2581759278159768,
-            "baseline": 21
+            "lineHeight": 1.2581759278159768
           },
           {
             "type": "text",
@@ -3740,8 +3693,7 @@
             "verticalAlign": "top",
             "containerId": null,
             "originalText": "INT.",
-            "lineHeight": 1.3125,
-            "baseline": 14
+            "lineHeight": 1.3125
           }
         ],
         "id": "0AvbxoG64GGQNqvBMDul9",
@@ -3853,8 +3805,7 @@
             "verticalAlign": "top",
             "containerId": null,
             "originalText": "DC10",
-            "lineHeight": 1.2581759278159768,
-            "baseline": 21
+            "lineHeight": 1.2581759278159768
           },
           {
             "type": "text",
@@ -3892,8 +3843,7 @@
             "verticalAlign": "top",
             "containerId": null,
             "originalText": "INT. ST!",
-            "lineHeight": 1.3125,
-            "baseline": 14
+            "lineHeight": 1.3125
           }
         ],
         "id": "XiWxsVcSxFgjG23MHkb11",
@@ -4005,8 +3955,7 @@
             "verticalAlign": "top",
             "containerId": null,
             "originalText": "DC10",
-            "lineHeight": 1.2581759278159768,
-            "baseline": 21
+            "lineHeight": 1.2581759278159768
           },
           {
             "type": "text",
@@ -4044,8 +3993,7 @@
             "verticalAlign": "top",
             "containerId": null,
             "originalText": "Athletics",
-            "lineHeight": 1.3125,
-            "baseline": 14
+            "lineHeight": 1.3125
           }
         ],
         "id": "lKzm_rSwUwJ9aOawy6I9d",
@@ -4157,8 +4105,7 @@
             "verticalAlign": "top",
             "containerId": null,
             "originalText": "DC10",
-            "lineHeight": 1.2581759278159768,
-            "baseline": 21
+            "lineHeight": 1.2581759278159768
           },
           {
             "type": "text",
@@ -4196,8 +4143,7 @@
             "verticalAlign": "top",
             "containerId": null,
             "originalText": "STR.",
-            "lineHeight": 1.3125,
-            "baseline": 14
+            "lineHeight": 1.3125
           }
         ],
         "id": "3vi2CYfnArul8MdgXRnPN",
@@ -4309,8 +4255,7 @@
             "verticalAlign": "top",
             "containerId": null,
             "originalText": "DC10",
-            "lineHeight": 1.2581759278159768,
-            "baseline": 21
+            "lineHeight": 1.2581759278159768
           },
           {
             "type": "text",
@@ -4348,8 +4293,7 @@
             "verticalAlign": "top",
             "containerId": null,
             "originalText": "STR. ST!",
-            "lineHeight": 1.3125,
-            "baseline": 14
+            "lineHeight": 1.3125
           }
         ],
         "id": "dVz2EKW2jyruZWLhzdRLw",
@@ -4461,8 +4405,7 @@
             "verticalAlign": "top",
             "containerId": null,
             "originalText": "DC5",
-            "lineHeight": 1.2581759278159768,
-            "baseline": 21
+            "lineHeight": 1.2581759278159768
           },
           {
             "type": "text",
@@ -4500,8 +4443,7 @@
             "verticalAlign": "top",
             "containerId": null,
             "originalText": "Insight",
-            "lineHeight": 1.3125,
-            "baseline": 14
+            "lineHeight": 1.3125
           }
         ],
         "id": "X5Kb86MWjTB-rWVCgaUxV",
@@ -4613,8 +4555,7 @@
             "verticalAlign": "top",
             "containerId": null,
             "originalText": "DC5",
-            "lineHeight": 1.2581759278159768,
-            "baseline": 21
+            "lineHeight": 1.2581759278159768
           },
           {
             "type": "text",
@@ -4652,8 +4593,7 @@
             "verticalAlign": "top",
             "containerId": null,
             "originalText": "Perception",
-            "lineHeight": 1.3125,
-            "baseline": 14
+            "lineHeight": 1.3125
           }
         ],
         "id": "lRWqhpRMIM6P95Cw7Wwf3",
@@ -4765,8 +4705,7 @@
             "verticalAlign": "top",
             "containerId": null,
             "originalText": "DC5",
-            "lineHeight": 1.2581759278159768,
-            "baseline": 21
+            "lineHeight": 1.2581759278159768
           },
           {
             "type": "text",
@@ -4804,8 +4743,7 @@
             "verticalAlign": "top",
             "containerId": null,
             "originalText": "Survival",
-            "lineHeight": 1.3125,
-            "baseline": 14
+            "lineHeight": 1.3125
           }
         ],
         "id": "BbfibF2cJ2n2lkKUZRWzg",
@@ -4917,8 +4855,7 @@
             "verticalAlign": "top",
             "containerId": null,
             "originalText": "DC5",
-            "lineHeight": 1.2581759278159768,
-            "baseline": 21
+            "lineHeight": 1.2581759278159768
           },
           {
             "type": "text",
@@ -4956,8 +4893,7 @@
             "verticalAlign": "top",
             "containerId": null,
             "originalText": "Anim. Handling",
-            "lineHeight": 1.3125,
-            "baseline": 14
+            "lineHeight": 1.3125
           }
         ],
         "id": "WIMTOPr3hUJNUK7JzoGPM",
@@ -5069,8 +5005,7 @@
             "verticalAlign": "top",
             "containerId": null,
             "originalText": "DC5",
-            "lineHeight": 1.2581759278159768,
-            "baseline": 21
+            "lineHeight": 1.2581759278159768
           },
           {
             "type": "text",
@@ -5108,8 +5043,7 @@
             "verticalAlign": "top",
             "containerId": null,
             "originalText": "Medicine",
-            "lineHeight": 1.3125,
-            "baseline": 14
+            "lineHeight": 1.3125
           }
         ],
         "id": "-ps_dKuToG_k6ZTgLL-oa",
@@ -5223,8 +5157,7 @@
             "verticalAlign": "top",
             "containerId": null,
             "originalText": "DC15",
-            "lineHeight": 1.2581759278159768,
-            "baseline": 21
+            "lineHeight": 1.2581759278159768
           },
           {
             "type": "text",
@@ -5263,8 +5196,7 @@
             "verticalAlign": "top",
             "containerId": null,
             "originalText": "WIS.",
-            "lineHeight": 1.3459282594396773,
-            "baseline": 13
+            "lineHeight": 1.3459282594396773
           }
         ],
         "id": "nOknPB7T0ZNJUMepYWZ8H",
@@ -5378,8 +5310,7 @@
             "verticalAlign": "top",
             "containerId": null,
             "originalText": "DC15",
-            "lineHeight": 1.2581759278159768,
-            "baseline": 21
+            "lineHeight": 1.2581759278159768
           },
           {
             "type": "text",
@@ -5418,8 +5349,7 @@
             "verticalAlign": "top",
             "containerId": null,
             "originalText": "WIS. ST!",
-            "lineHeight": 1.3459282594396773,
-            "baseline": 13
+            "lineHeight": 1.3459282594396773
           }
         ],
         "id": "zhN1t1-NIstCqcX3GKX0S",
@@ -5511,8 +5441,7 @@
             "verticalAlign": "middle",
             "containerId": "sVC40AjNu21WPXEbmqpyy",
             "originalText": "Plot point",
-            "lineHeight": 1.15,
-            "baseline": 18
+            "lineHeight": 1.15
           },
           {
             "type": "rectangle",
@@ -5584,8 +5513,7 @@
             "verticalAlign": "middle",
             "containerId": "kY97cz7BRzIYKqdXP6x6t",
             "originalText": "Intro",
-            "lineHeight": 1.15,
-            "baseline": 18
+            "lineHeight": 1.15
           },
           {
             "type": "arrow",
@@ -5709,8 +5637,7 @@
             "verticalAlign": "middle",
             "containerId": "CbtndnTTaDOVIwQb2SBnJ",
             "originalText": "Found items & Lore",
-            "lineHeight": 1.3125,
-            "baseline": 14
+            "lineHeight": 1.3125
           },
           {
             "type": "arrow",
@@ -5886,8 +5813,7 @@
             "verticalAlign": "middle",
             "containerId": "WyY3RdsshAyetTI-KEJjq",
             "originalText": "flavor info if they ask for it",
-            "lineHeight": 1.3125,
-            "baseline": 35
+            "lineHeight": 1.3125
           },
           {
             "type": "rectangle",
@@ -5983,8 +5909,7 @@
             "verticalAlign": "middle",
             "containerId": "AacN-gbaSu5W1p9tPygO4",
             "originalText": "Plot point",
-            "lineHeight": 1.15,
-            "baseline": 18
+            "lineHeight": 1.15
           },
           {
             "type": "arrow",
@@ -6188,8 +6113,7 @@
             "verticalAlign": "middle",
             "containerId": "phQhBBQix8SDB3deVmKGo",
             "originalText": "Plot point",
-            "lineHeight": 1.15,
-            "baseline": 18
+            "lineHeight": 1.15
           },
           {
             "type": "arrow",
@@ -6341,8 +6265,7 @@
             "verticalAlign": "middle",
             "containerId": "cFnDOKKN_Mu9S_XROasm0",
             "originalText": "Sidetrack",
-            "lineHeight": 1.15,
-            "baseline": 18
+            "lineHeight": 1.15
           },
           {
             "type": "arrow",
@@ -6522,8 +6445,7 @@
             "verticalAlign": "middle",
             "containerId": "37M5y2jxHjhbYt-uUIbeP",
             "originalText": "Hidden info",
-            "lineHeight": 1.1875,
-            "baseline": 14
+            "lineHeight": 1.1875
           },
           {
             "type": "arrow",
@@ -6675,8 +6597,7 @@
             "verticalAlign": "middle",
             "containerId": "Bh2ltg77KSKKTtP50CftM",
             "originalText": "Sidetrack 2",
-            "lineHeight": 1.15,
-            "baseline": 18
+            "lineHeight": 1.15
           },
           {
             "type": "arrow",
@@ -6832,8 +6753,7 @@
             "verticalAlign": "top",
             "containerId": null,
             "originalText": "DC15",
-            "lineHeight": 1.2581759278159768,
-            "baseline": 21
+            "lineHeight": 1.2581759278159768
           },
           {
             "type": "text",
@@ -6871,8 +6791,7 @@
             "verticalAlign": "top",
             "containerId": null,
             "originalText": "Investigation",
-            "lineHeight": 1.3125,
-            "baseline": 14
+            "lineHeight": 1.3125
           },
           {
             "type": "rectangle",
@@ -6972,8 +6891,7 @@
             "verticalAlign": "middle",
             "containerId": "m8fkrqZCETQ1rSZ4iXZ3N",
             "originalText": "PC oriented story part",
-            "lineHeight": 1.15,
-            "baseline": 18
+            "lineHeight": 1.15
           },
           {
             "type": "arrow",
@@ -7125,8 +7043,7 @@
             "verticalAlign": "middle",
             "containerId": "pnC10d9_9FSoIYEPaEhnt",
             "originalText": "Outro",
-            "lineHeight": 1.15,
-            "baseline": 18
+            "lineHeight": 1.15
           },
           {
             "type": "arrow",
@@ -7250,8 +7167,7 @@
             "verticalAlign": "middle",
             "containerId": "goeg2aJ3j0bpGmUIuObDg",
             "originalText": "DM notes",
-            "lineHeight": 1.3,
-            "baseline": 18
+            "lineHeight": 1.3
           },
           {
             "type": "rectangle",
@@ -7323,8 +7239,7 @@
             "verticalAlign": "middle",
             "containerId": "dwcZRKO4-EtdAS0XpD0d2",
             "originalText": "DM notes",
-            "lineHeight": 1.3,
-            "baseline": 18
+            "lineHeight": 1.3
           },
           {
             "type": "line",
@@ -7973,8 +7888,7 @@
             "verticalAlign": "top",
             "containerId": null,
             "originalText": "\nROLL \nFOR \nINITIATIVE\n\n",
-            "lineHeight": 1.2690790862140562,
-            "baseline": 129
+            "lineHeight": 1.2690790862140562
           },
           {
             "type": "line",
@@ -8078,8 +7992,7 @@
             "verticalAlign": "top",
             "containerId": null,
             "originalText": "DC10",
-            "lineHeight": 1.2581759278159768,
-            "baseline": 21
+            "lineHeight": 1.2581759278159768
           },
           {
             "type": "text",
@@ -8117,8 +8030,7 @@
             "verticalAlign": "top",
             "containerId": null,
             "originalText": "Deception",
-            "lineHeight": 1.3125,
-            "baseline": 14
+            "lineHeight": 1.3125
           },
           {
             "type": "rectangle",
@@ -8190,8 +8102,7 @@
             "verticalAlign": "middle",
             "containerId": "LgS7OwMn_O7jt-xjuRrfJ",
             "originalText": "DM notes",
-            "lineHeight": 1.3,
-            "baseline": 18
+            "lineHeight": 1.3
           }
         ],
         "id": "_KG3MLzTlMCwwrA930An9",
@@ -8839,8 +8750,7 @@
             "verticalAlign": "top",
             "containerId": null,
             "originalText": "\nROLL \nFOR \nINITIATIVE\n\n",
-            "lineHeight": 1.2833333333333334,
-            "baseline": 129
+            "lineHeight": 1.2833333333333334
           }
         ],
         "id": "HJVbiYv3V7y92mtaNjowW",
@@ -9116,8 +9026,7 @@
             "verticalAlign": "top",
             "containerId": null,
             "originalText": "Short rest",
-            "lineHeight": 1.2969625505788036,
-            "baseline": 14
+            "lineHeight": 1.2969625505788036
           }
         ],
         "id": "Ukr_DuQ0gnVXnysOIdYcx",
@@ -10183,8 +10092,7 @@
             "verticalAlign": "top",
             "containerId": null,
             "originalText": "Long rest",
-            "lineHeight": 1.2812024148148167,
-            "baseline": 25
+            "lineHeight": 1.2812024148148167
           }
         ],
         "id": "5SC-JVM5GT7WTG2n6IqLF",

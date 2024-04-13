@@ -36,7 +36,7 @@ Hired help
 - Delucia - "Leground"
 	- Her face looks almost undead, incisor teeth.
 
-Convene in Bathroom - Osym, Ivra and TItus. 
+Convene in Bathroom - Osim, Ivra and TItus. 
 Seeming into Guards.
 Locate Object - brings us to the 3rd floor. 
 Knockout guards and stash them in astronomy/adventure room
